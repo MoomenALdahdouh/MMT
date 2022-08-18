@@ -1707,7 +1707,7 @@ p#me_timer span {
 .cv-help-icon svg {
     width: 70px;
     height: 70px;
-    fill: #fff;
+    fill: #3cbcff;
 }
 .cv-help-icon{
     margin-bottom: 31px;
@@ -1726,7 +1726,7 @@ p#me_timer span {
     text-align: center;
     padding-top: 47px;
     margin-top: 53px;
-    border-top: 2px dashed #fff;
+    border-top: 2px dashed #3cbcff;
     position: relative;
 }
 .cv-help-quote:after {
@@ -1739,7 +1739,7 @@ p#me_timer span {
     height: 16px;
     transform: rotate(-45deg);
     margin: auto;
-    background: #fff;
+    background: #3cbcff;
 }
 .cv-get-btn {
     min-width: 200px;
@@ -1758,6 +1758,28 @@ p#me_timer span {
 }
 .cv-get-btn:hover{
     color: #fff;
+    transform: translateY(-5px);
+}
+
+.cv-get-btn2 {
+    min-width: 200px;
+    height: 60px;
+    display: block;
+    background: #3cbcff;
+    line-height: 57px;
+    border: 2px dashed;
+    color: #FFF;
+    max-width: 250px;
+    margin: 30px auto 0;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-radius: 10px;
+    padding: 0 30px;
+}
+.cv-get-btn2:hover{
+    color: #3cbcff;
+    background: #FFF;
     transform: translateY(-5px);
 }
 /* help end */
