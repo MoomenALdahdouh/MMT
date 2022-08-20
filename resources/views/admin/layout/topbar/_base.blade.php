@@ -14,7 +14,7 @@
         <!--begin::Menu wrapper-->
         <div class="cursor-pointer symbol symbol-30px symbol-md-40px" data-kt-menu-trigger="click"
              data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
-            <img src="{{asset("admins/images/blank.svg")}}" alt="user"/>
+            <img src="{{asset("assets/admin/images/blank.svg")}}" alt="user"/>
         </div>
 
         <!--layout-partial:layout/topbar/partials/_user-menu.html-->

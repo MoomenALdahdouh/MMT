@@ -328,7 +328,7 @@
     <!--end::Content-->
 @endsection
 @section('js')
-    <script src="{{ asset('admins/js/permissions/permissions.js') }}" defer></script>
-    <script src="{{ asset('admins/js/permissions/create_permission.js') }}" defer></script>
-    <script src="{{ asset('admins/js/permissions/edit_permission.js') }}" defer></script>
+    <script src="{{ asset('assets/admin/js/permissions/permissions.js') }}" defer></script>
+    <script src="{{ asset('assets/admin/js/permissions/create_permission.js') }}" defer></script>
+    <script src="{{ asset('assets/admin/js/permissions/edit_permission.js') }}" defer></script>
 @endsection

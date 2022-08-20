@@ -313,5 +313,5 @@
     <!--end::Content-->
 @endsection
 @section('js')
-    <script src="{{ asset('admins/js/auth/edit_profile.js') }}" defer></script>
+    <script src="{{ asset('assets/admin/js/auth/edit_profile.js') }}" defer></script>
 @endsection

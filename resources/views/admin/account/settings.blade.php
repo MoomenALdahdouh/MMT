@@ -10291,17 +10291,17 @@ License: For each use you must have a valid license purchased only from above li
 		<!--begin::Javascript-->
 		<!--begin::Global Javascript Bundle(used by all pages)-->
 		<script src="assets/plugins/global/plugins.bundle.js"></script>
-		<script src="admins/js/scripts.bundle.js"></script>
+		<script src="assets/admin/js/scripts.bundle.js"></script>
 		<!--end::Global Javascript Bundle-->
 		<!--begin::Page Custom Javascript(used by this page)-->
-		<script src="admins/js/custom/account/settings/signin-methods.js"></script>
-		<script src="admins/js/custom/account/settings/profile-details.js"></script>
-		<script src="admins/js/custom/account/settings/deactivate-account.js"></script>
-		<script src="admins/js/custom/modals/two-factor-authentication.js"></script>
-		<script src="admins/js/custom/widgets.js"></script>
-		<script src="admins/js/custom/apps/chat/chat.js"></script>
-		<script src="admins/js/custom/modals/create-app.js"></script>
-		<script src="admins/js/custom/modals/upgrade-plan.js"></script>
+		<script src="assets/admin/js/custom/account/settings/signin-methods.js"></script>
+		<script src="assets/admin/js/custom/account/settings/profile-details.js"></script>
+		<script src="assets/admin/js/custom/account/settings/deactivate-account.js"></script>
+		<script src="assets/admin/js/custom/modals/two-factor-authentication.js"></script>
+		<script src="assets/admin/js/custom/widgets.js"></script>
+		<script src="assets/admin/js/custom/apps/chat/chat.js"></script>
+		<script src="assets/admin/js/custom/modals/create-app.js"></script>
+		<script src="assets/admin/js/custom/modals/upgrade-plan.js"></script>
 		<!--end::Page Custom Javascript-->
 		<!--end::Javascript-->
 	</body>

@@ -87,7 +87,7 @@ License: For each use you must have a valid license purchased only from above li
 		<!--begin::Javascript-->
 		<!--begin::Global Javascript Bundle(used by all pages)-->
 		<script src="assets/plugins/global/plugins.bundle.js"></script>
-		<script src="admins/js/scripts.bundle.js"></script>
+		<script src="assets/admin/js/scripts.bundle.js"></script>
 		<!--end::Global Javascript Bundle-->
 		<!--end::Javascript-->
 	</body>

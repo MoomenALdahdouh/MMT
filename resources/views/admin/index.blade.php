@@ -10,5 +10,5 @@
    Welcome
 @endsection
 @section('js')
-    <script src="{{ asset('admins/js/admin/dashboard/dashboard.js') }}" defer></script>
+    <script src="{{ asset('assets/admin/js/admin/dashboard/dashboard.js') }}" defer></script>
 @endsection

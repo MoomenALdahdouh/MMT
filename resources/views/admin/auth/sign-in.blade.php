@@ -99,7 +99,7 @@
     <!--end::Authentication - Sign-in-->
 </div>
 @include('admin.layout.scripts')
-<script src="{{asset("admins/js/auth/login.js")}}" defer></script>
+<script src="{{asset("assets/admin/js/auth/login.js")}}" defer></script>
 </body>
 <!--end::Body-->
 </html>

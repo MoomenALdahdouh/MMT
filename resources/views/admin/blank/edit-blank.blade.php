@@ -332,6 +332,6 @@
     <!--end::Content-->
 @endsection
 @section('js')
-    <script src="{{ asset('admins/js/blank/edit_blank.js') }}" defer></script>
+    <script src="{{ asset('assets/admin/js/blank/edit_blank.js') }}" defer></script>
 @endsection
 

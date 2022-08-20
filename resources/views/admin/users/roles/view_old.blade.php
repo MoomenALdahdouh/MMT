@@ -430,6 +430,6 @@
     <!--end::Content-->
 @endsection
 @section('js')
-    <script src="{{ asset('admins/js/roles/list/users.js') }}" defer></script>
-    <script src="{{ asset('admins/js/roles/view/update_role.js') }}" defer></script>
+    <script src="{{ asset('assets/admin/js/roles/list/users.js') }}" defer></script>
+    <script src="{{ asset('assets/admin/js/roles/view/update_role.js') }}" defer></script>
 @endsection

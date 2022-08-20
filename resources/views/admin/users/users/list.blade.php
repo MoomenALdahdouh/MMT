@@ -538,6 +538,6 @@
     </style>
 @endsection
 @section('js')
-    <script src="{{ asset('admins/js/users/users.js') }}" defer></script>
-    <script src="{{ asset('admins/js/users/create_user.js') }}" defer></script>
+    <script src="{{ asset('assets/admin/js/users/users.js') }}" defer></script>
+    <script src="{{ asset('assets/admin/js/users/create_user.js') }}" defer></script>
 @endsection

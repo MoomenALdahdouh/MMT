@@ -117,6 +117,6 @@
     <!--end::Content-->
 @endsection
 @section('js')
-    <script src="{{ asset('admins/js/blank/blank.js') }}" defer></script>
-    <!--    <script src="{{asset('admins/js/custom/apps/ecommerce/catalog/categories.js')}}" aria-hidden="true"></script>
+    <script src="{{ asset('assets/admin/js/blank/blank.js') }}" defer></script>
+    <!--    <script src="{{asset('assets/admin/js/custom/apps/ecommerce/catalog/categories.js')}}" aria-hidden="true"></script>
 @endsection

@@ -367,5 +367,5 @@
     <!--end::Content-->
 @endsection
 @section('js')
-    <script src="{{ asset('admins/js/users/edit_user.js') }}" defer></script>
+    <script src="{{ asset('assets/admin/js/users/edit_user.js') }}" defer></script>
 @endsection
