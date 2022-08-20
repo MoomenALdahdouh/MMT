@@ -23,10 +23,11 @@
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="cv-foot-box cv-foot-logo">
-                    <img src="{{asset("assets/images/logo.svg")}}" alt="image" class="img-fluid"/>
+                    <a href="{{url("/")}}"><img width="320" src="{{asset("assets/images/logo.png")}}" alt="image"
+                                                class="img-fluid"/></a>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                         commodo consequat quis nostrud exercitation ullamco laboris.</p>
-                    <div class="cv-foot-payment">
+                    {{--<div class="cv-foot-payment">
                         <a href="javascript:;"><img src="{{asset("assets/images/pay1.png")}}" alt="image"
                                                     class="img-fluid"/></a>
                         <a href="javascript:;"><img src="{{asset("assets/images/pay2.png")}}" alt="image"
@@ -35,7 +36,7 @@
                                                     class="img-fluid"/></a>
                         <a href="javascript:;"><img src="{{asset("assets/images/pay4.png")}}" alt="image"
                                                     class="img-fluid"/></a>
-                    </div>
+                    </div>--}}
                 </div>
             </div>
             <div class="col-lg-2 col-md-6">
