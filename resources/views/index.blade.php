@@ -52,7 +52,7 @@
                                             d="M 435.488281 138.917969 L 435.472656 138.519531 C 435.25 133.601562 435.101562 128.398438 435.011719 122.609375 C 434.59375 94.378906 412.152344 71.027344 383.917969 69.449219 C 325.050781 66.164062 279.511719 46.96875 240.601562 9.042969 L 240.269531 8.726562 C 227.578125 -2.910156 208.433594 -2.910156 195.738281 8.726562 L 195.40625 9.042969 C 156.496094 46.96875 110.957031 66.164062 52.089844 69.453125 C 23.859375 71.027344 1.414062 94.378906 0.996094 122.613281 C 0.910156 128.363281 0.757812 133.566406 0.535156 138.519531 L 0.511719 139.445312 C -0.632812 199.472656 -2.054688 274.179688 22.9375 341.988281 C 36.679688 379.277344 57.492188 411.691406 84.792969 438.335938 C 115.886719 468.679688 156.613281 492.769531 205.839844 509.933594 C 207.441406 510.492188 209.105469 510.945312 210.800781 511.285156 C 213.191406 511.761719 215.597656 512 218.003906 512 C 220.410156 512 222.820312 511.761719 225.207031 511.285156 C 226.902344 510.945312 228.578125 510.488281 230.1875 509.925781 C 279.355469 492.730469 320.039062 468.628906 351.105469 438.289062 C 378.394531 411.636719 399.207031 379.214844 412.960938 341.917969 C 438.046875 273.90625 436.628906 199.058594 435.488281 138.917969 Z M 217.996094 383.605469 C 147.636719 383.605469 90.398438 326.367188 90.398438 256.007812 C 90.398438 185.648438 147.636719 128.410156 217.996094 128.410156 C 288.351562 128.410156 345.59375 185.648438 345.59375 256.007812 C 345.59375 326.367188 288.351562 383.605469 217.996094 383.605469 Z M 217.996094 383.605469 "></path>
                                     </svg>
                                 </div>
-                                <div class="cv-service-text">
+                                <div class="cv-service-text" style="{{ config('app.locale') == "en" ? "":"padding: 0 15px 0 0;" }} ">
                                     <h3>qualified products</h3>
                                     <p>Quis nostrud exercitation ullamco laboris nisi ut commodo consequat.</p>
                                 </div>
@@ -70,7 +70,7 @@
                                         </g>
                                     </svg>
                                 </div>
-                                <div class="cv-service-text">
+                                <div class="cv-service-text" style="{{ config('app.locale') == "en" ? "":"padding: 0 15px 0 0;" }} ">
                                     <h3>tested products</h3>
                                     <p>Quis nostrud exercitation ullamco laboris nisi ut commodo consequat.</p>
                                 </div>
@@ -104,7 +104,7 @@
                                             c8.157,0,14.769-6.613,14.769-14.769C408.615,437.51,360.029,388.923,300.308,388.923z"></path>
                                     </svg>
                                 </div>
-                                <div class="cv-service-text">
+                                <div class="cv-service-text" style="{{ config('app.locale') == "en" ? "":"padding: 0 15px 0 0;" }} ">
                                     <h3>Top rated</h3>
                                     <p>Quis nostrud exercitation ullamco laboris nisi ut commodo consequat.</p>
                                 </div>
@@ -126,7 +126,7 @@
                                         </g>
                                     </svg>
                                 </div>
-                                <div class="cv-service-text">
+                                <div class="cv-service-text" style="{{ config('app.locale') == "en" ? "":"padding: 0 15px 0 0;" }} ">
                                     <h3>Fast delivery</h3>
                                     <p>Quis nostrud exercitation ullamco laboris nisi ut commodo consequat.</p>
                                 </div>
@@ -138,7 +138,7 @@
                     <ul class="cv-service-ul cv-service-ul-right">
                         <li>
                             <div class="cv-service-box">
-                                <div class="cv-service-text">
+                                <div class="cv-service-text" style="{{ config('app.locale') == "en" ? "":"text-align: left;    padding: 0 0 0 15px;" }} ">
                                     <h3>Varified products</h3>
                                     <p>Quis nostrud exercitation ullamco laboris nisi ut commodo consequat.</p>
                                 </div>
@@ -167,7 +167,7 @@
                         </li>
                         <li>
                             <div class="cv-service-box">
-                                <div class="cv-service-text">
+                                <div class="cv-service-text" style="{{ config('app.locale') == "en" ? "":"text-align: left;    padding: 0 0 0 15px;" }} ">
                                     <h3>easy Payment</h3>
                                     <p>Quis nostrud exercitation ullamco laboris nisi ut commodo consequat.</p>
                                 </div>
@@ -188,7 +188,7 @@
                         </li>
                         <li>
                             <div class="cv-service-box">
-                                <div class="cv-service-text">
+                                <div class="cv-service-text" style="{{ config('app.locale') == "en" ? "":"text-align: left;    padding: 0 0 0 15px;" }} ">
                                     <h3>best support</h3>
                                     <p>Quis nostrud exercitation ullamco laboris nisi ut commodo consequat.</p>
                                 </div>
@@ -204,7 +204,7 @@
                         </li>
                         <li>
                             <div class="cv-service-box">
-                                <div class="cv-service-text">
+                                <div class="cv-service-text" style="{{ config('app.locale') == "en" ? "":"text-align: left;    padding: 0 0 0 15px;" }} ">
                                     <h3>return policy</h3>
                                     <p>Quis nostrud exercitation ullamco laboris nisi ut commodo consequat.</p>
                                 </div>
@@ -943,7 +943,7 @@
                                         l48.64-48.64C517.581,425.6,517.581,394.88,499.66,376.96z"></path>
                                     </svg>
                                 </div>
-                                <div class="cv-contact-text">
+                                <div class="cv-contact-text" style="{{ config('app.locale') == "en" ? "":"padding-left: 0px; padding-right: 20px;" }} ">
                                     <h3>Contact</h3>
                                     <p>+001 456-789-2591</p>
                                 </div>
@@ -969,7 +969,7 @@
                                             c2.083-2.24,3.104-5.271,2.802-8.323C503.021,422.938,501.417,420.167,498.927,418.375z"></path>
                                     </svg>
                                 </div>
-                                <div class="cv-contact-text">
+                                <div class="cv-contact-text" style="{{ config('app.locale') == "en" ? "":"padding-left: 0px; padding-right: 20px;" }} ">
                                     <h3>Email</h3>
                                     <p>example@medical.com</p>
                                 </div>
@@ -983,7 +983,7 @@
                                         s85.333,38.281,85.333,85.333C341.333,217.719,303.052,256,256,256z"></path>
                                     </svg>
                                 </div>
-                                <div class="cv-contact-text">
+                                <div class="cv-contact-text" style="{{ config('app.locale') == "en" ? "":"padding-left: 0px; padding-right: 20px;" }} ">
                                     <h3>Location</h3>
                                     <p>025 CAL California, America</p>
                                 </div>
@@ -1009,7 +1009,7 @@
                                             c2.083-2.24,3.104-5.271,2.802-8.323C503.021,422.938,501.417,420.167,498.927,418.375z"></path>
                                     </svg>
                                 </div>
-                                <div class="cv-contact-text">
+                                <div class="cv-contact-text" style="{{ config('app.locale') == "en" ? "":"padding-left: 0px; padding-right: 20px;" }} ">
                                     <h3>Fax</h3>
                                     <p>+001 456-789-2591</p>
                                 </div>

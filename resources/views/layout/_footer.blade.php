@@ -13,8 +13,8 @@
                 <div class="col-md-6">
                     <div class="cv-foot-newsletter">
                         <form>
-                            <input type="text" placeholder="Enter your email"/>
-                            <button class="cv-btn">subscribe</button>
+                            <input type="text" placeholder="Enter your email" style="{{ config('app.locale') == "en" ? "":"border-radius: 0px 30px 30px 0px" }} "/>
+                            <button class="cv-btn" style="{{ config('app.locale') == "en" ? "":"border-radius: 30px 0px 0px 30px" }} ">subscribe</button>
                         </form>
                     </div>
                 </div>
