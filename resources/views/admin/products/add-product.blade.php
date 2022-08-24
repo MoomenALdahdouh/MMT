@@ -478,7 +478,7 @@
                                     </div>
                                     <!--end::Media-->
                                     <!--begin::Pricing-->
-                                    <div class="card card-flush py-4">
+                                    <div class="card card-flush py-4 d-none">
                                         <!--begin::Card header-->
                                         <div class="card-header">
                                             <div class="card-title">
@@ -487,7 +487,7 @@
                                         </div>
                                         <!--end::Card header-->
                                         <!--begin::Card body-->
-                                        <div class="card-body pt-0">
+                                        <div class="card-body pt-0 ">
                                             <!--begin::Input group-->
                                             <div class="mb-10 fv-row">
                                                 <!--begin::Label-->
@@ -508,125 +508,6 @@
                                             </div>
                                             <!--end::Input group-->
                                             <!--begin::Input group-->
-                                        <!--                                            <div class="fv-row mb-10">
-                                                &lt;!&ndash;begin::Label&ndash;&gt;
-                                                <label class="fs-6 fw-bold mb-2">{{__("str.Discount Type")}}
-                                                <i class="fas fa-exclamation-circle ms-2 fs-7"
-                                                   data-bs-toggle="tooltip"
-                                                   title="{{__("str.Select a discount type that will be applied to this product")}}"></i></label>
-                                                &lt;!&ndash;End::Label&ndash;&gt;
-                                                &lt;!&ndash;begin::Row&ndash;&gt;
-                                                <div class="row row-cols-1 row-cols-md-3 row-cols-lg-1 row-cols-xl-3 g-9"
-                                                     data-kt-buttons="true"
-                                                     data-kt-buttons-target="[data-kt-button='true']">
-                                                    &lt;!&ndash;begin::Col&ndash;&gt;
-                                                    <div class="col">
-                                                        &lt;!&ndash;begin::Option&ndash;&gt;
-                                                        <label class="btn btn-outline btn-outline-dashed btn-outline-default active d-flex text-start p-6"
-                                                               data-kt-button="true">
-                                                            &lt;!&ndash;begin::Radio&ndash;&gt;
-                                                            <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
-																				<input class="form-check-input"
-                                                                                       type="radio"
-                                                                                       name="discount_option" value="1"
-                                                                                       checked="checked"/>
-																			</span>
-                                                            &lt;!&ndash;end::Radio&ndash;&gt;
-                                                            &lt;!&ndash;begin::Info&ndash;&gt;
-                                                            <span class="ms-5">
-																				<span class="fs-4 fw-bolder text-gray-800 d-block">{{__("str.No Discount")}}</span>
-																			</span>
-                                                            &lt;!&ndash;end::Info&ndash;&gt;
-                                                        </label>
-                                                        &lt;!&ndash;end::Option&ndash;&gt;
-                                                    </div>
-                                                    &lt;!&ndash;end::Col&ndash;&gt;
-                                                    &lt;!&ndash;begin::Col&ndash;&gt;
-                                                    <div class="col">
-                                                        &lt;!&ndash;begin::Option&ndash;&gt;
-                                                        <label class="btn btn-outline btn-outline-dashed btn-outline-default d-flex text-start p-6"
-                                                               data-kt-button="true">
-                                                            &lt;!&ndash;begin::Radio&ndash;&gt;
-                                                            <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
-																				<input class="form-check-input"
-                                                                                       type="radio"
-                                                                                       name="discount_option"
-                                                                                       value="2"/>
-																			</span>
-                                                            &lt;!&ndash;end::Radio&ndash;&gt;
-                                                            &lt;!&ndash;begin::Info&ndash;&gt;
-                                                            <span class="ms-5">
-																				<span class="fs-4 fw-bolder text-gray-800 d-block">{{__("str.Percentage %")}}</span>
-																			</span>
-                                                            &lt;!&ndash;end::Info&ndash;&gt;
-                                                        </label>
-                                                        &lt;!&ndash;end::Option&ndash;&gt;
-                                                    </div>
-                                                    &lt;!&ndash;end::Col&ndash;&gt;
-                                                    &lt;!&ndash;begin::Col&ndash;&gt;
-                                                    <div class="col">
-                                                        &lt;!&ndash;begin::Option&ndash;&gt;
-                                                        <label class="btn btn-outline btn-outline-dashed btn-outline-default d-flex text-start p-6"
-                                                               data-kt-button="true">
-                                                            &lt;!&ndash;begin::Radio&ndash;&gt;
-                                                            <span class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1">
-																				<input class="form-check-input"
-                                                                                       type="radio"
-                                                                                       name="discount_option"
-                                                                                       value="3"/>
-																			</span>
-                                                            &lt;!&ndash;end::Radio&ndash;&gt;
-                                                            &lt;!&ndash;begin::Info&ndash;&gt;
-                                                            <span class="ms-5">
-																				<span class="fs-4 fw-bolder text-gray-800 d-block">{{__("str.Fixed Price")}}</span>
-																			</span>
-                                                            &lt;!&ndash;end::Info&ndash;&gt;
-                                                        </label>
-                                                        &lt;!&ndash;end::Option&ndash;&gt;
-                                                    </div>
-                                                    &lt;!&ndash;end::Col&ndash;&gt;
-                                                </div>
-                                                &lt;!&ndash;end::Row&ndash;&gt;
-                                            </div>
-                                            &lt;!&ndash;end::Input group&ndash;&gt;
-                                            &lt;!&ndash;begin::Input group&ndash;&gt;
-                                            <div class="d-none mb-10 fv-row"
-                                                 id="kt_ecommerce_add_product_discount_percentage">
-                                                &lt;!&ndash;begin::Label&ndash;&gt;
-                                                <label class="form-label">{{__("str.Set Discount Percentage")}}</label>
-                                                &lt;!&ndash;end::Label&ndash;&gt;
-                                                &lt;!&ndash;begin::Slider&ndash;&gt;
-                                                <div class="d-flex flex-column text-center mb-5">
-                                                    <div class="d-flex align-items-start justify-content-center mb-7">
-                                                        <span class="fw-bolder fs-3x"
-                                                              id="kt_ecommerce_add_product_discount_label">0</span>
-                                                        <span class="fw-bolder fs-4 mt-1 ms-2">%</span>
-                                                    </div>
-                                                    <div id="kt_ecommerce_add_product_discount_slider"
-                                                         class="noUi-sm"></div>
-                                                </div>
-                                                &lt;!&ndash;end::Slider&ndash;&gt;
-                                                &lt;!&ndash;begin::Description&ndash;&gt;
-                                                <div class="text-muted fs-7">{{__("str.Set a percentage discount to be applied on this product.")}}
-                                                </div>
-                                                &lt;!&ndash;end::Description&ndash;&gt;
-                                            </div>
-                                            &lt;!&ndash;end::Input group&ndash;&gt;
-                                            &lt;!&ndash;begin::Input group&ndash;&gt;
-                                            <div class="d-none mb-10 fv-row"
-                                                 id="kt_ecommerce_add_product_discount_fixed">
-                                                &lt;!&ndash;begin::Label&ndash;&gt;
-                                                <label class="form-label">{{__("str.Fixed Discounted Price")}}</label>
-                                                &lt;!&ndash;end::Label&ndash;&gt;
-                                                &lt;!&ndash;begin::Input&ndash;&gt;
-                                                <input id="product_discount_fixed" type="number" name="dicsounted_price"
-                                                       class="form-control mb-2"
-                                                       placeholder="{{__("str.Discounted price")}}"/>
-                                                &lt;!&ndash;end::Input&ndash;&gt;
-                                                &lt;!&ndash;begin::Description&ndash;&gt;
-                                                <div class="text-muted fs-7">{{__("str.Set the discounted product price. The product will be reduced at the determined fixed price")}}</div>
-                                                &lt;!&ndash;end::Description&ndash;&gt;
-                                            </div>-->
                                             <!--end::Input group-->
                                             <!--begin::Tax-->
 
@@ -642,7 +523,7 @@
                             <div class="tab-pane fade" id="kt_ecommerce_add_product_advanced" role="tab-panel">
                                 <div class="d-flex flex-column gap-7 gap-lg-10">
                                     <!--begin::Inventory-->
-                                    <div class="card card-flush py-4">
+                                    <div class="card card-flush py-4 d-none">
                                         <!--begin::Card header-->
                                         <div class="card-header">
                                             <div class="card-title">
@@ -682,7 +563,7 @@
                                     </div>
                                     <!--end::Inventory-->
                                     <!--begin::Variations-->
-                                    <div class="card card-flush py-4">
+                                    <div class="card card-flush py-4 d-none">
                                         <!--begin::Card header-->
                                         <div class="card-header">
                                             <div class="card-title">

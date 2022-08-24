@@ -61,7 +61,7 @@
                           class="d-flex flex-column flex-row-fluid gap-7 gap-lg-10">
                         @csrf
                         <!--begin::General options-->
-                        <div class="card card-flush py-4">
+                        <div class="card card-flush py-4 d-none">
                             <!--begin::Card header-->
                             <div class="card-header">
                                 <div class="card-title">
@@ -70,7 +70,7 @@
                             </div>
                             <!--end::Card header-->
                             <!--begin::Card body-->
-                            <div class="card-body pt-0">
+                            <div class="card-body pt-0 ">
                                 <!--begin::Input group-->
                                 <div class="mb-10 fv-row">
                                     <!--begin::Label-->
@@ -121,7 +121,7 @@
                         </div>
                         <!--end::General options-->
                         <!--begin::General options-->
-                        <div class="card card-flush py-4">
+                        <div class="card card-flush py-4 d-none">
                             <!--begin::Card header-->
                             <div class="card-header">
                                 <div class="card-title">
@@ -178,7 +178,7 @@
                         </div>
                         <!--end::General options-->
                         <!--begin::General options-->
-                        <div class="card card-flush py-4">
+                        <div class="card card-flush py-4 d-none">
                             <!--begin::Card header-->
                             <div class="card-header">
                                 <div class="card-title">

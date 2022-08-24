@@ -218,14 +218,10 @@ class ProductAdminController extends Controller
                 'product_name' => 'required:products',
                 'product_name_en' => 'required:products',
                 'product_image' => 'required:products',
-                'product_price' => 'required:products',
-                'product_quantity' => 'required:products',
             ], [
                 'product_name.required' => trans("sts.This field is required"),
                 'product_name_en.required' => trans("sts.This field is required"),
                 'product_image.required' => trans("sts.This field is required"),
-                'product_price.required' => trans("sts.This field is required"),
-                'product_quantity.required' => trans("sts.This field is required"),
             ]);
 
             if ($validator->passes()) {
@@ -265,14 +261,10 @@ class ProductAdminController extends Controller
                 'product_name' => 'required:products',
                 'product_name_en' => 'required:products',
                 'product_image' => 'required:products',
-                'product_price' => 'required:products',
-                'product_quantity' => 'required:products',
             ], [
                 'product_name.required' => trans("sts.This field is required"),
                 'product_name_en.required' => trans("sts.This field is required"),
                 'product_image.required' => trans("sts.This field is required"),
-                'product_price.required' => trans("sts.This field is required"),
-                'product_quantity.required' => trans("sts.This field is required"),
             ]);
 
             if ($validator->passes()) {

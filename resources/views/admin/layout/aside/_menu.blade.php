@@ -190,7 +190,7 @@
             </div>
         @endcan
         @can("our story")
-            <div class="menu-item">
+            <div class="menu-item d-none">
                 <a class="menu-link {{str_contains($url,"our-story") ? "active":""}}"
                    href="{{url("/admin/our-story")}}">
 										<span class="menu-icon">
@@ -219,7 +219,7 @@
             </div>
         @endcan
         @can("our message")
-            <div class="menu-item">
+            <div class="menu-item d-none">
                 <a class="menu-link {{str_contains($url,"our-message") ? "active":""}}"
                    href="{{url("/admin/our-message")}}">
 										<span class="menu-icon">
@@ -267,7 +267,7 @@
             </div>
         @endcan
         @can("terms")
-            <div class="menu-item">
+            <div class="menu-item d-none">
                 <a class="menu-link {{str_contains($url,"terms-conditions") ? "active":""}}"
                    href="{{url("/admin/terms-conditions")}}">
 										<span class="menu-icon">

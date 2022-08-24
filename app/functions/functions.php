@@ -1,20 +1,8 @@
 <?php
 
 use App\Models\Admin;
-use App\Models\CaseReferments;
-use App\Models\CoreLookups;
-use App\Models\EvaluationSections;
-use App\Models\Logs;
 use App\Models\Permission;
-use App\Models\Role;
 use App\Models\RolesPermission;
-use App\Models\SettingPage;
-use App\Models\Notification;
-use App\Models\SpecialistsSupervisorApprovals;
-use Illuminate\Http\Request;
-use Carbon\Carbon;
-use Illuminate\Support\Facades\Mail;
-use Jenssegers\Agent\Agent;
 
 function admin($id)
 {
@@ -28,6 +16,11 @@ function lang($data)
 
 
 function get_permission_by_name($name)
+{
+    $permission = Permission::query()->where("name", $name)->where("status", 1)->get()->first();
+    return $permission;
+}
+function asdasdas($name)
 {
     $permission = Permission::query()->where("name", $name)->where("status", 1)->get()->first();
     return $permission;
