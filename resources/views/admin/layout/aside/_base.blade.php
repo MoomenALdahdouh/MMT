@@ -6,9 +6,9 @@
     <!--begin::Brand-->
     <div class="aside-logo flex-column-auto" id="kt_aside_logo">
         <!--begin::Logo-->
-        <a @if(auth('admin')->user()->type == 0) href="{{url("/admin")}}@endif">
+        <a href="{{url("/admin")}}">
             {{--<img alt="Logo" src="{{asset('/assets/media/logos/logo-1-dark.svg')}}" class="h-25px logo"/>--}}
-            <img alt="Logo" width="95%" src="{{asset('assets/images/logo_w.svg')}}" class="logo"/>
+            <img alt="Logo" width="85%" src="{{asset('assets/admin/images/logo.png')}}" class="logo pt-2"/>
         </a>
         <!--end::Logo-->
         <!--begin::Aside toggler-->

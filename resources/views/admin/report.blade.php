@@ -20,7 +20,7 @@
         <p>My first paragraph.</p>
     </div>
 </div>
-{{--@dd(dd(public_path('assets/site/images/logo.svg')))--}}
+{{--@dd(dd(public_path('assets/site/images/logo.png')))--}}
 
 </body>
 </html>

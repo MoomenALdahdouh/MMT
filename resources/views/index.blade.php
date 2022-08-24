@@ -1,9 +1,9 @@
 @extends('layout.main')
-@section('site_title','main')
-@section('site_description','main')
-@section('site_author','main')
-@section('site_keywords','main')
-@section('site_copyright','main')
+@section('site_title',__("sts.home"))
+@section('site_description',__("sts.home"))
+@section('site_author',__("sts.home"))
+@section('site_keywords',__("sts.home"))
+@section('site_copyright',__("sts.home"))
 @section('site_css')
 @endsection
 {{--TODO:: By Eng. Moomen Sameer Aldahdouh 0599124279, moomenaldahdouh@gmail.com--}}
@@ -252,7 +252,8 @@
                         </div>
                         <h2 style="color: #242424">We are here to assist you</h2>
                         <span style="color: #3cbcff">Always ready to provide the best solution</span>
-                        <p style="color: #242424">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        <p style="color: #242424">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea
                             commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                             dolore</p>
                     </div>
@@ -541,13 +542,17 @@
             <div class="row">
                 <div class="col-12">
                     <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
-                        <div class="swiper-wrapper" style="transform: translate3d(-2292px, 0px, 0px); transition-duration: 1500ms;"><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1" style="width: 352px; margin-right: 30px;">
+                        <div class="swiper-wrapper"
+                             style="transform: translate3d(-2292px, 0px, 0px); transition-duration: 1500ms;">
+                            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1"
+                                 style="width: 352px; margin-right: 30px;">
                                 <div class="cv-product-box">
                                     <div class="cv-product-img">
                                         <span class="cv-sale">sale</span>
                                         <img src="../assets/images/product8.jpg" alt="image" class="img-fluid">
                                         <div class="cv-product-button">
-                                            <a href="{{url("product")}}" class="cv-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.312 461.312">
+                                            <a href="{{url("product")}}" class="cv-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.312 461.312">
                                                     <g>
                                                         <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
                                                         S271.616,156.416,230.656,156.416z M225.024,208.64c-9.216,0-16.896,7.68-16.896,16.896h-24.576
@@ -559,20 +564,26 @@
                                                         C463.104,237.312,463.104,224.512,455.936,215.296z M230.656,338.176c-59.392,0-107.52-48.128-107.52-107.52
                                                         s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
                                                     </g>
-                                                </svg> View detail</a>
+                                                </svg>
+                                                View detail</a>
                                         </div>
                                     </div>
                                     <div class="cv-product-data">
                                         <a href="javascript:;" class="cv-price-title">Hand gloves</a>
-                                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="far fa-star"></i></p>
                                     </div>
                                 </div>
-                            </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="2" style="width: 352px; margin-right: 30px;">
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
+                                 data-swiper-slide-index="2" style="width: 352px; margin-right: 30px;">
                                 <div class="cv-product-box">
                                     <div class="cv-product-img">
                                         <img src="../assets/images/product4.jpg" alt="image" class="img-fluid">
                                         <div class="cv-product-button">
-                                            <a href="{{url("product")}}" class="cv-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.312 461.312">
+                                            <a href="{{url("product")}}" class="cv-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.312 461.312">
                                                     <g>
                                                         <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
                                                         S271.616,156.416,230.656,156.416z M225.024,208.64c-9.216,0-16.896,7.68-16.896,16.896h-24.576
@@ -584,21 +595,27 @@
                                                         C463.104,237.312,463.104,224.512,455.936,215.296z M230.656,338.176c-59.392,0-107.52-48.128-107.52-107.52
                                                         s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
                                                     </g>
-                                                </svg> View detail</a>
+                                                </svg>
+                                                View detail</a>
                                         </div>
                                     </div>
                                     <div class="cv-product-data">
                                         <a href="javascript:;" class="cv-price-title">Saftey mask</a>
-                                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+                                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="far fa-star"></i><i
+                                                class="far fa-star"></i></p>
                                     </div>
                                 </div>
-                            </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="3" style="width: 352px; margin-right: 30px;">
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                                 data-swiper-slide-index="3" style="width: 352px; margin-right: 30px;">
                                 <div class="cv-product-box">
                                     <div class="cv-product-img">
                                         <span class="cv-sale">sale</span>
                                         <img src="../assets/images/product7.jpg" alt="image" class="img-fluid">
                                         <div class="cv-product-button">
-                                            <a href="{{url("product")}}" class="cv-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.312 461.312">
+                                            <a href="{{url("product")}}" class="cv-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.312 461.312">
                                                     <g>
                                                         <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
                                                         S271.616,156.416,230.656,156.416z M225.024,208.64c-9.216,0-16.896,7.68-16.896,16.896h-24.576
@@ -610,21 +627,26 @@
                                                         C463.104,237.312,463.104,224.512,455.936,215.296z M230.656,338.176c-59.392,0-107.52-48.128-107.52-107.52
                                                         s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
                                                     </g>
-                                                </svg> View detail</a>
+                                                </svg>
+                                                View detail</a>
                                         </div>
                                     </div>
                                     <div class="cv-product-data">
                                         <a href="javascript:;" class="cv-price-title">Oxygen mask</a>
-                                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="far fa-star"></i></p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="0" style="width: 352px; margin-right: 30px;">
+                            <div class="swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="0"
+                                 style="width: 352px; margin-right: 30px;">
                                 <div class="cv-product-box">
                                     <div class="cv-product-img">
                                         <img src="../assets/images/product2.jpg" alt="image" class="img-fluid">
                                         <div class="cv-product-button">
-                                            <a href="{{url("product")}}" class="cv-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.312 461.312">
+                                            <a href="{{url("product")}}" class="cv-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.312 461.312">
                                                     <g>
                                                         <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
                                                         S271.616,156.416,230.656,156.416z M225.024,208.64c-9.216,0-16.896,7.68-16.896,16.896h-24.576
@@ -636,22 +658,27 @@
                                                         C463.104,237.312,463.104,224.512,455.936,215.296z M230.656,338.176c-59.392,0-107.52-48.128-107.52-107.52
                                                         s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
                                                     </g>
-                                                </svg> View detail</a>
+                                                </svg>
+                                                View detail</a>
                                         </div>
                                     </div>
                                     <div class="cv-product-data">
                                         <a href="javascript:;" class="cv-price-title">Plastic face shield</a>
-                                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="far fa-star"></i></p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide" data-swiper-slide-index="1" style="width: 352px; margin-right: 30px;">
+                            <div class="swiper-slide" data-swiper-slide-index="1"
+                                 style="width: 352px; margin-right: 30px;">
                                 <div class="cv-product-box">
                                     <div class="cv-product-img">
                                         <span class="cv-sale">sale</span>
                                         <img src="../assets/images/product8.jpg" alt="image" class="img-fluid">
                                         <div class="cv-product-button">
-                                            <a href="{{url("product")}}" class="cv-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.312 461.312">
+                                            <a href="{{url("product")}}" class="cv-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.312 461.312">
                                                     <g>
                                                         <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
                                                         S271.616,156.416,230.656,156.416z M225.024,208.64c-9.216,0-16.896,7.68-16.896,16.896h-24.576
@@ -663,21 +690,26 @@
                                                         C463.104,237.312,463.104,224.512,455.936,215.296z M230.656,338.176c-59.392,0-107.52-48.128-107.52-107.52
                                                         s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
                                                     </g>
-                                                </svg> View detail</a>
+                                                </svg>
+                                                View detail</a>
                                         </div>
                                     </div>
                                     <div class="cv-product-data">
                                         <a href="javascript:;" class="cv-price-title">Hand gloves</a>
-                                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="far fa-star"></i></p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="2" style="width: 352px; margin-right: 30px;">
+                            <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="2"
+                                 style="width: 352px; margin-right: 30px;">
                                 <div class="cv-product-box">
                                     <div class="cv-product-img">
                                         <img src="../assets/images/product4.jpg" alt="image" class="img-fluid">
                                         <div class="cv-product-button">
-                                            <a href="{{url("product")}}" class="cv-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.312 461.312">
+                                            <a href="{{url("product")}}" class="cv-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.312 461.312">
                                                     <g>
                                                         <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
                                                         S271.616,156.416,230.656,156.416z M225.024,208.64c-9.216,0-16.896,7.68-16.896,16.896h-24.576
@@ -689,22 +721,27 @@
                                                         C463.104,237.312,463.104,224.512,455.936,215.296z M230.656,338.176c-59.392,0-107.52-48.128-107.52-107.52
                                                         s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
                                                     </g>
-                                                </svg> View detail</a>
+                                                </svg>
+                                                View detail</a>
                                         </div>
                                     </div>
                                     <div class="cv-product-data">
                                         <a href="javascript:;" class="cv-price-title">Saftey mask</a>
-                                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+                                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="far fa-star"></i><i
+                                                class="far fa-star"></i></p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="3" style="width: 352px; margin-right: 30px;">
+                            <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="3"
+                                 style="width: 352px; margin-right: 30px;">
                                 <div class="cv-product-box">
                                     <div class="cv-product-img">
                                         <span class="cv-sale">sale</span>
                                         <img src="../assets/images/product7.jpg" alt="image" class="img-fluid">
                                         <div class="cv-product-button">
-                                            <a href="{{url("product")}}" class="cv-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.312 461.312">
+                                            <a href="{{url("product")}}" class="cv-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.312 461.312">
                                                     <g>
                                                         <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
                                                         S271.616,156.416,230.656,156.416z M225.024,208.64c-9.216,0-16.896,7.68-16.896,16.896h-24.576
@@ -716,21 +753,26 @@
                                                         C463.104,237.312,463.104,224.512,455.936,215.296z M230.656,338.176c-59.392,0-107.52-48.128-107.52-107.52
                                                         s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
                                                     </g>
-                                                </svg> View detail</a>
+                                                </svg>
+                                                View detail</a>
                                         </div>
                                     </div>
                                     <div class="cv-product-data">
                                         <a href="javascript:;" class="cv-price-title">Oxygen mask</a>
-                                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="far fa-star"></i></p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="0" style="width: 352px; margin-right: 30px;">
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-next"
+                                 data-swiper-slide-index="0" style="width: 352px; margin-right: 30px;">
                                 <div class="cv-product-box">
                                     <div class="cv-product-img">
                                         <img src="../assets/images/product2.jpg" alt="image" class="img-fluid">
                                         <div class="cv-product-button">
-                                            <a href="{{url("product")}}" class="cv-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.312 461.312">
+                                            <a href="{{url("product")}}" class="cv-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.312 461.312">
                                                     <g>
                                                         <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
                                                         S271.616,156.416,230.656,156.416z M225.024,208.64c-9.216,0-16.896,7.68-16.896,16.896h-24.576
@@ -742,21 +784,27 @@
                                                         C463.104,237.312,463.104,224.512,455.936,215.296z M230.656,338.176c-59.392,0-107.52-48.128-107.52-107.52
                                                         s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
                                                     </g>
-                                                </svg> View detail</a>
+                                                </svg>
+                                                View detail</a>
                                         </div>
                                     </div>
                                     <div class="cv-product-data">
                                         <a href="javascript:;" class="cv-price-title">Plastic face shield</a>
-                                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="far fa-star"></i></p>
                                     </div>
                                 </div>
-                            </div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1" style="width: 352px; margin-right: 30px;">
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1"
+                                 style="width: 352px; margin-right: 30px;">
                                 <div class="cv-product-box">
                                     <div class="cv-product-img">
                                         <span class="cv-sale">sale</span>
                                         <img src="../assets/images/product8.jpg" alt="image" class="img-fluid">
                                         <div class="cv-product-button">
-                                            <a href="{{url("product")}}" class="cv-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.312 461.312">
+                                            <a href="{{url("product")}}" class="cv-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.312 461.312">
                                                     <g>
                                                         <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
                                                         S271.616,156.416,230.656,156.416z M225.024,208.64c-9.216,0-16.896,7.68-16.896,16.896h-24.576
@@ -768,20 +816,26 @@
                                                         C463.104,237.312,463.104,224.512,455.936,215.296z M230.656,338.176c-59.392,0-107.52-48.128-107.52-107.52
                                                         s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
                                                     </g>
-                                                </svg> View detail</a>
+                                                </svg>
+                                                View detail</a>
                                         </div>
                                     </div>
                                     <div class="cv-product-data">
                                         <a href="javascript:;" class="cv-price-title">Hand gloves</a>
-                                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></p>
+                                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="far fa-star"></i></p>
                                     </div>
                                 </div>
-                            </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="2" style="width: 352px; margin-right: 30px;">
+                            </div>
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
+                                 data-swiper-slide-index="2" style="width: 352px; margin-right: 30px;">
                                 <div class="cv-product-box">
                                     <div class="cv-product-img">
                                         <img src="../assets/images/product4.jpg" alt="image" class="img-fluid">
                                         <div class="cv-product-button">
-                                            <a href="{{url("product")}}" class="cv-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.312 461.312">
+                                            <a href="{{url("product")}}" class="cv-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.312 461.312">
                                                     <g>
                                                         <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
                                                         S271.616,156.416,230.656,156.416z M225.024,208.64c-9.216,0-16.896,7.68-16.896,16.896h-24.576
@@ -793,15 +847,19 @@
                                                         C463.104,237.312,463.104,224.512,455.936,215.296z M230.656,338.176c-59.392,0-107.52-48.128-107.52-107.52
                                                         s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
                                                     </g>
-                                                </svg> View detail</a>
+                                                </svg>
+                                                View detail</a>
                                         </div>
                                     </div>
                                     <div class="cv-product-data">
                                         <a href="javascript:;" class="cv-price-title">Saftey mask</a>
-                                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+                                        <p><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                                class="fas fa-star"></i><i class="far fa-star"></i><i
+                                                class="far fa-star"></i></p>
                                     </div>
                                 </div>
-                            </div></div>
+                            </div>
+                        </div>
                         <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
                     <!-- Add Arrows -->
                     <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"></div>
@@ -825,7 +883,9 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="cv-about-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
                         <h2>Our Expertise</h2>
                         <ul>
                             <li>Heart Surgery</li>
@@ -961,9 +1021,12 @@
                     <div class="cv-contact-form">
                         <h2 class="cv-sidebar-title">Get a quote</h2>
                         <form>
-                            <input type="text" placeholder="Enater your name" name="full_name" id="full_name" class="require">
-                            <input type="text" placeholder="Enter your email" name="email" id="email" class="require" data-valid="email" data-error="Email should be valid.">
-                            <input type="text" placeholder="Enter your subject" name="subject" id="subject" class="require">
+                            <input type="text" placeholder="Enater your name" name="full_name" id="full_name"
+                                   class="require">
+                            <input type="text" placeholder="Enter your email" name="email" id="email" class="require"
+                                   data-valid="email" data-error="Email should be valid.">
+                            <input type="text" placeholder="Enter your subject" name="subject" id="subject"
+                                   class="require">
                             <textarea placeholder="Message here" name="message" id="message" class="require"></textarea>
                             <button type="button" class="cv-btn submitForm">submit</button>
                             <div class="response"></div>
@@ -976,7 +1039,9 @@
     <!-- conatact end -->
     <!-- iframe start -->
     <div class="cv-contact-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12301.513435483917!2d-96.04069515802735!3d39.57362236131941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87be3e79433f6007%3A0x86baec447b34422!2sAmerica%20City%2C%20KS%2066540%2C%20USA!5e0!3m2!1sen!2sin!4v1588407931927!5m2!1sen!2sin" aria-hidden="false" tabindex="0"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12301.513435483917!2d-96.04069515802735!3d39.57362236131941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87be3e79433f6007%3A0x86baec447b34422!2sAmerica%20City%2C%20KS%2066540%2C%20USA!5e0!3m2!1sen!2sin!4v1588407931927!5m2!1sen!2sin"
+            aria-hidden="false" tabindex="0"></iframe>
     </div>
     <!-- iframe end -->
     <!-- Instagram start -->

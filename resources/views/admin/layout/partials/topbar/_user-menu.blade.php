@@ -130,11 +130,11 @@
 														<span class="fs-8 rounded bg-light px-3 py-2 position-absolute translate-middle-y top-50 end-0">{{ Config::get('language')[App::getLocale()] }}
                                                             @if(App::getLocale() == "ar")
                                                                 <img class="w-15px h-15px rounded-1 ms-2"
-                                                                     src="{{asset("assets/images/palestine.svg")}}"
+                                                                     src="{{asset("assets/admin/images/palestine.svg")}}"
                                                                      alt="metronic"/>
                                                             @else
                                                                 <img class="w-15px h-15px rounded-1 ms-2"
-                                                                     src="{{asset("assets/images/united-states.svg")}}"
+                                                                     src="{{asset("assets/admin/images/united-states.svg")}}"
                                                                      alt="metronic"/>
                                                             @endif
                                                         </span>
@@ -150,11 +150,11 @@
                                                         <span class="symbol symbol-20px me-4">
                                                             @if($lang == "ar")
                                                                 <img class="w-15px h-15px rounded-1 ms-2"
-                                                                     src="{{asset("assets/images/palestine.svg")}}"
+                                                                     src="{{asset("assets/admin/images/palestine.svg")}}"
                                                                      alt="metronic"/>
                                                             @else
                                                                 <img class="w-15px h-15px rounded-1 ms-2"
-                                                                     src="{{asset("assets/images/united-states.svg")}}"
+                                                                     src="{{asset("assets/admin/images/united-states.svg")}}"
                                                                      alt="metronic"/>
                                                             @endif
                                                         </span>{{$language}}</a>
@@ -165,11 +165,11 @@
                                                         <span class="symbol symbol-20px me-4">
                                                             @if($lang == "ar")
                                                                 <img class="w-15px h-15px rounded-1 ms-2"
-                                                                     src="{{asset("assets/images/palestine.svg")}}"
+                                                                     src="{{asset("assets/admin/images/palestine.svg")}}"
                                                                      alt="metronic"/>
                                                             @else
                                                                 <img class="w-15px h-15px rounded-1 ms-2"
-                                                                     src="{{asset("assets/images/united-states.svg")}}"
+                                                                     src="{{asset("assets/admin/images/united-states.svg")}}"
                                                                      alt="metronic"/>
                                                             @endif
                                                         </span>{{$language}}</a>

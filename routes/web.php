@@ -1,10 +1,20 @@
 <?php
 
+use App\Http\Controllers\admin\AboutUsAdminController;
 use App\Http\Controllers\Admin\AuthAdminController;
+use App\Http\Controllers\admin\CategoryAdminController;
+use App\Http\Controllers\admin\ContactUsAdminController;
 use App\Http\Controllers\Admin\DashboardAdminController;
+use App\Http\Controllers\admin\FollowUsAdminController;
+use App\Http\Controllers\admin\OurMessageAdminController;
+use App\Http\Controllers\admin\OurStoryAdminController;
 use App\Http\Controllers\Admin\PermissionAdminController;
+use App\Http\Controllers\admin\PrivacyPolicyAdminController;
+use App\Http\Controllers\admin\ProductAdminController;
 use App\Http\Controllers\admin\RoleController;
 use App\Http\Controllers\Admin\RolesAdminController;
+use App\Http\Controllers\admin\SettingsAdminController;
+use App\Http\Controllers\admin\TermsConditionsAdminController;
 use App\Http\Controllers\Admin\UserAdminController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CKEditorController;
@@ -133,6 +143,107 @@ Route::prefix('admin')->name('admin.')->group(function () {
                     Route::post('update/{id}', 'update')->name('update');
                     Route::post('store', 'store')->name('store');
                     Route::delete('delete/{id}', 'destroy')->name('delete');
+                });
+
+            Route::prefix('categories')
+                ->name('categories')
+                ->middleware('permission:category')
+                ->controller(CategoryAdminController::class)
+                ->group(function () {
+                    Route::get('/', 'index')->name('categories');
+                    Route::get('create', 'create')->name('create')->middleware('permission:category_create');
+                    Route::get('edit/{id}', 'edit')->name('edit')->middleware('permission:category_edit');
+                    Route::delete('delete/{id}', 'destroy')->name('delete');
+                    Route::post('store', 'store')->name('store');
+                    Route::post('edit/update/{id}', 'update')->name('update');
+                });
+
+            Route::prefix('products')
+                ->name('products')
+                ->middleware('permission:product')
+                ->controller(ProductAdminController::class)
+                ->group(function () {
+                    Route::get('/', 'index')->name('products');
+                    Route::get('/create', 'create')->name('create')->middleware('permission:product_create');
+                    Route::get('/edit/{id}', 'edit')->name('edit')->middleware('permission:product_edit');
+                    Route::delete('/delete/{id}', 'destroy')->name('delete');
+                    Route::post('/store', 'store')->name('store');
+                    Route::post('/edit/update/{id}', 'update')->name('update');
+                    Route::post('pin_status/{id}', 'pin_status')->name('pin_status');
+                });
+
+            Route::prefix('about-us')
+                ->name('about-us')
+                ->middleware('permission:about us')
+                ->controller(AboutUsAdminController::class)
+                ->group(function () {
+                    Route::get('/', 'index')->name('about-us');
+                    Route::post('store', 'store')->name('store');
+                });
+
+            Route::prefix('contact-us')
+                ->name('contact-us')
+                ->middleware('permission:contact us')
+                ->controller(ContactUsAdminController::class)
+                ->group(function () {
+                    Route::get('/', 'index')->name('contact-us');
+                    Route::post('store', 'store')->name('store');
+                    Route::delete('delete/{id}', 'destroy')->name('delete');
+                    Route::get('show/{id}', 'show')->name('show');
+                    Route::post('update/{id}', 'update')->name('update');
+                    Route::get('reply/{id}', 'reply')->name('reply');
+                    Route::get('compose', 'compose')->name('compose');
+                });
+
+            Route::prefix('privacy-policy')
+                ->name('privacy-policy')
+                ->middleware('permission:privacy policy')
+                ->controller(PrivacyPolicyAdminController::class)
+                ->group(function () {
+                    Route::get('/', 'index')->name('privacy-policy');
+                    Route::post('store', 'store')->name('store');
+                });
+            Route::prefix('terms-conditions')
+                ->name('terms-conditions')
+                ->middleware('permission:terms')
+                ->controller(TermsConditionsAdminController::class)
+                ->group(function () {
+                    Route::get('/', 'index')->name('terms-conditions');
+                    Route::post('store', 'store')->name('store');
+                });
+            Route::prefix('follow-us')
+                ->name('follow-us')
+                ->middleware('permission:follow us')
+                ->controller(FollowUsAdminController::class)
+                ->group(function () {
+                    Route::get('/', 'index')->name('terms-conditions');
+                    Route::post('store', 'store')->name('store');
+                });
+            Route::prefix('our-story')
+                ->name('our-story')
+                ->middleware('permission:our story')
+                ->controller(OurStoryAdminController::class)
+                ->group(function () {
+                    Route::get('/', 'index')->name('our-story');
+                    Route::post('store', 'store')->name('store');
+                });
+
+            Route::prefix('our-message')
+                ->name('our-message')
+                ->middleware('permission:our message')
+                ->controller(OurMessageAdminController::class)
+                ->group(function () {
+                    Route::get('/', 'index')->name('our-message');
+                    Route::post('store', 'store')->name('store');
+                });
+
+            Route::prefix('settings')
+                ->name('settings')
+                ->middleware('permission:settings')
+                ->controller(SettingsAdminController::class)
+                ->group(function () {
+                    Route::get('/', 'index')->name('terms-conditions');
+                    Route::post('store', 'store')->name('store');
                 });
         });
 });

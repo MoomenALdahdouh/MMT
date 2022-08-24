@@ -5,7 +5,7 @@
 			<tr>
 				<td align="center" valign="center" style="text-align:center; padding: 40px">
 					<a href="https://keenthemes.com" rel="noopener" target="_blank">
-						<img src="{{asset("assets/images/logo.png")}}" style="height: 45px" alt="logo">
+						<img src="{{asset("assets/admin/images/logo.png")}}" style="height: 45px" alt="logo">
 							<tr>
 								<td align="left" valign="center">
 									<div style="text-align:left; margin: 0 20px; padding: 40px; background-color:#ffffff; border-radius: 6px">

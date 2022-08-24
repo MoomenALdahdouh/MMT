@@ -90,7 +90,7 @@
                 <tr>
                     <td align="center" valign="top" style="padding: 40px 10px 10px 10px;">
                         <a href="http://thetheme.io" target="_blank">
-                            <img alt="Logo" src="{{asset("assets/images/logo.png")}}" width="300" height="300" style="display: block; font-family: &apos;Lato&apos;, Helvetica, Arial, sans-serif; color: #ffffff; font-size: 18px;" border="0">
+                            <img alt="Logo" src="{{asset("assets/admin/images/logo.png")}}" width="300" height="300" style="display: block; font-family: &apos;Lato&apos;, Helvetica, Arial, sans-serif; color: #ffffff; font-size: 18px;" border="0">
                         </a>
                     </td>
                 </tr>

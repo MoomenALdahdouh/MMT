@@ -118,7 +118,7 @@
                     <td align="center" valign="top" style="padding: 60px 0 10px 0;">
                         <div style="background-color: #FFF; border-radius: 5px;">
                             <a href="{{env("APP_URL")}}" target="_blank">
-                                <img alt="Logo" src="{{asset("assets/images/logo.png")}}" width="300" height="300"
+                                <img alt="Logo" src="{{asset("assets/admin/images/logo.png")}}" width="300" height="300"
                                      style="display: block; font-family: &apos;Lato&apos;, Helvetica, Arial, sans-serif; color: #ffffff; font-size: 18px;"
                                      border="0">
                             </a>

@@ -8,7 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <meta name="theme-color" content="#000000"/>
-    <title>{{__("str.Haji Karak")}} @yield("site_title")</title>
+    <title>{{__("str.project_name")}} @yield("site_title")</title>
     <meta name="description" content="@yield("site_description")"/>
     <meta name="author" content="@yield("site_author")"/>
     <meta name="keywords" content="@yield("site_keywords")"/>

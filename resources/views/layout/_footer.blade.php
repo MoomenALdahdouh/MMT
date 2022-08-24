@@ -23,7 +23,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="cv-foot-box cv-foot-logo">
-                    <a href="{{url("/")}}"><img width="320" src="{{asset("assets/images/logo.png")}}" alt="image"
+                    <a href="{{url("/")}}"><img width="320" src="{{asset("assets/admin/images/logo.png")}}" alt="image"
                                                 class="img-fluid"/></a>
                     <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                         commodo consequat quis nostrud exercitation ullamco laboris.</p>

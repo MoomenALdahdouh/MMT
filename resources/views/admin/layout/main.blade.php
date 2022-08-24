@@ -8,7 +8,12 @@
     <meta charset="utf-8"/>
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
+    {{--TODO:: MOOMEN S. ALDAHDOUH 1/20/2022--}}
+    <title>{{__("str.title")}} @yield("title")</title>
+    <meta name="description" content="@yield("description")"/>
+    <meta name="author" content="@yield("author")"/>
+    <meta name="keywords" content="@yield("keywords")"/>
+    <meta name="copyright" content="@yield("copyright")"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;800&family=Lalezar&family=Poppins:wght@300&display=swap" rel="stylesheet">

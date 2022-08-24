@@ -1,9 +1,4 @@
 {{--TODO:: MOOMEN S. ALDAHDOUH 1/20/2022--}}
-<title>{{__("str.title")}} @yield("title")</title>
-<meta name="description" content="@yield("description")"/>
-<meta name="author" content="@yield("author")"/>
-<meta name="keywords" content="@yield("keywords")"/>
-<meta name="copyright" content="@yield("copyright")"/>
 <!-- FavIcon Links for all devices -->
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
@@ -16,6 +11,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="{{asset("assets/admin/images/icon.png")}}">
 <link rel="icon" type="image/png" sizes="16x16" href="{{asset("assets/admin/images/icon.png")}}">
 <link rel="manifest" href="{{asset("assets/admin/images/icon.png")}}">
+<link rel="shortcut icon" href="{{asset("assets/admin/images/icon.png")}}" type="image/x-icon">
 <link rel="canonical" href="https://preview.keenthemes.com/metronic8"/>
 <!--begin::Fonts-->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"/>

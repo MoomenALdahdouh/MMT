@@ -31,7 +31,7 @@
             <!--begin::Logo-->
             <a href="{{url("/")}}" class="mb-7 text-center">
                 {{--<img alt="Logo" src="{{asset('/media/logos/logo-1-dark.svg')}}" class="h-25px logo"/>--}}
-                <img alt="Logo" width="20%" src="{{asset('images/logo.png')}}" class="logo"/>
+                <img alt="Logo" width="60%" src="{{asset('assets/admin/images/logo.png')}}" class="logo mb-10"/>
             </a>
             <!--end::Logo-->
             <!--begin::Wrapper-->
