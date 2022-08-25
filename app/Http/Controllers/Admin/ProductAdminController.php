@@ -233,8 +233,8 @@ class ProductAdminController extends Controller
                 $data->name = ['ar' => $request->product_name, 'en' => $request->product_name_en];
                 $data->description = ['ar' => $request->product_description, 'en' => $request->product_description_en];
                 $data->image = $image;
-                $data->price = $request->product_price;
-                $data->quantity = $request->product_quantity;
+                //$data->price = $request->product_price;
+                //$data->quantity = $request->product_quantity;
                 $data->status = $request->status;
                 $data->type = $request->product_type;
                 $data->created_at = Carbon::now();
@@ -279,8 +279,8 @@ class ProductAdminController extends Controller
                 }
                 $data->name = ['ar' => $request->product_name, 'en' => $request->product_name_en];
                 $data->description = ['ar' => $request->product_description, 'en' => $request->product_description_en];
-                $data->price = $request->product_price;
-                $data->quantity = $request->product_quantity;
+                //$data->price = $request->product_price;
+                //$data->quantity = $request->product_quantity;
                 $data->status = $request->status;
                 $data->type = $request->product_type;
                 $data->updated_at = Carbon::now();

@@ -102,7 +102,7 @@ return [
     'Base Price' => 'Base Price',
     'Set the product price.' => 'Set the product price.',
     'Discount Type' => 'Discount Type',
-    'Set the product thumbnail image. Only *.png, *.jpg and *.jpeg image files are accepted and size 1M' => 'Set the product thumbnail image. Only *.png, *.jpg and *.jpeg image files are accepted and size 1M',
+    'Set the product thumbnail image. Only *.png, *.jpg and *.jpeg image files are accepted and size 1M' => 'Set the product thumbnail image. Only *.png, *.jpg and *.jpeg image files are accepted and size (253*253)-1M',
     'Set the product status.' => 'Set the product status.',
     'Product Details' => 'Product Details',
     'Add product to a category.' => 'Add product to a category.',
@@ -471,7 +471,7 @@ return [
     'no roles' => 'No roles',
     'Not Seen' => 'Not Seen',
     'Seen' => 'Seen',
-    'Pin Status' => 'New Product',
+    'Pin Status' => 'Pin Product',
     'Drop the file here!' => 'Drop the file here!',
     'Save' => 'Save',
     'Upload' => 'Upload',
@@ -660,7 +660,7 @@ return [
     'The selected email is invalid.' => 'The selected email is invalid.',
     'The password field is required.' => 'The password field is required.',
     'The password must be at least 8 characters.' => 'The password must be at least 8 characters.',
-    'regex password'  => 'The word should be 6-10 letters long and contain a capital letter, numbers and symbols',
+    'regex password' => 'The word should be 6-10 letters long and contain a capital letter, numbers and symbols',
     'The password is not correct!' => 'The password is not correct!',
     //End Validation
     //Start Errors pages

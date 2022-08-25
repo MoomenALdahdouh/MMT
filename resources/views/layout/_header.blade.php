@@ -1,8 +1,12 @@
 <!-- main header -->
 @php
+    use Illuminate\Support\Facades\Session;
     $language = config('app.locale');
     $url = \Illuminate\Support\Facades\URL::current();
     $previous_url = \Illuminate\Support\Facades\URL::previous();
+    Session::put('lang', $language);
+    Session::put('c_url', $url);
+    Session::put('p_url ', $previous_url);
 @endphp
     <!-- top header start -->
 <div class="cv-top-header-two">
@@ -44,7 +48,8 @@
                             <li><a href="{{url("/#gallery")}}">Product Gallery</a></li>
                             <li><a href="{{url("/#about_us")}}">About Us</a></li>
                             <li><a href="{{url("/#contact_us")}}">Contact Us</a></li>
-                            <li style="{{ config('app.locale') == "en" ? "":"margin-right: 25px" }} " class="cv-children-menu">
+                            <li style="{{ config('app.locale') == "en" ? "":"margin-right: 25px" }} "
+                                class="cv-children-menu">
                                 <a href="javascript:;">
                                     <span class="">
                                         <span

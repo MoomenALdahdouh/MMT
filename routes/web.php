@@ -18,9 +18,11 @@ use App\Http\Controllers\admin\TermsConditionsAdminController;
 use App\Http\Controllers\Admin\UserAdminController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CKEditorController;
+use App\Http\Controllers\IndexController;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\UploaderAdminController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -33,9 +35,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('index');
-});
+});*/
+
+Route::prefix('/')
+    ->controller(IndexController::class)
+    ->group(function () {
+        Route::get('/', 'index')->name('index');
+    });
 
 Route::get('product', function () {
     return view('single_product');

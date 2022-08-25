@@ -11,7 +11,8 @@ function admin($id)
 
 function lang($data)
 {
-    return app()->getLocale() == 'ar' ? $data->name_ar : $data->name_en;
+    return $data->getTranslation('name', config('app.locale'));
+    //return app()->getLocale() == 'ar' ? $data->name_ar : $data->name_en;
 }
 
 

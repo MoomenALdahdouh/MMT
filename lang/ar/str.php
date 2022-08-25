@@ -99,7 +99,7 @@ return [
     'Base Price' => 'السعر الأساسي',
     'Set the product price.' => 'حدد سعر المنتج.',
     'Discount Type' => 'نوع القسيمة',
-    'Set the product thumbnail image. Only *.png, *.jpg and *.jpeg image files are accepted and size 1M' => 'قم بتعيين الصورة المصغرة للمنتج. تقبل فقط ملفات الصور * .png و * .jpg و * .jpeg وحجمها 1M',
+    'Set the product thumbnail image. Only *.png, *.jpg and *.jpeg image files are accepted and size 1M' => 'قم بتعيين الصورة المصغرة للمنتج. تقبل فقط ملفات الصور * .png و * .jpg و * .jpeg وحجمها (253*253)-1M',
     'Set the product status.' => 'قم بتعيين حالة المنتج.',
     'Product Details' => 'تفاصيل المنتج',
     'Add product to a category.' => 'أضف المنتج إلى فئة.',
@@ -470,7 +470,7 @@ return [
     'Name' => 'الإسم',
     'Not Seen' => 'غير مقروءة',
     'Seen' => 'مقروءة',
-    'Pin Status' => 'منتج جديد',
+    'Pin Status' => 'تثبيت المنتج',
     'Drop the file here!' => 'أسقط الملف هنا!',
     'Save' => 'حفظ',
     'Upload' => 'تحميل',
@@ -693,7 +693,7 @@ return [
     'The selected email is invalid.' => 'البريد الإلكتروني المحدد غير صالح.',
     'The password field is required.' => 'حقل كلمة المرور مطلوب.',
     'The password must be at least 8 characters.' => 'يجب أن تتكون كلمة المرور من 8 أحرف على الأقل.',
-    'regex password'  => 'يجب ان تكون الكلمة من 6-10 حروف و تحتوي على حرف كبير وارقام ورموز',
+    'regex password' => 'يجب ان تكون الكلمة من 6-10 حروف و تحتوي على حرف كبير وارقام ورموز',
     'The password is not correct!' => 'كلمة السر غير صحيحة!',
     //End Validation
     //Start Errors pages
