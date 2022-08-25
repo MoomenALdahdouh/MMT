@@ -1,5 +1,6 @@
 <?php
 /*TODO:: By Eng. Moomen Sameer Aldahdouh 0599124279, moomenaldahdouh@gmail.com*/
+
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
@@ -52,39 +53,6 @@ class ProductAdminController extends Controller
                                 </td>
                                 <!--end::Product=-->';
                 })
-                ->addColumn('type', function ($products) {
-                    switch ($products->type) {
-                        case 0:
-                            return '<div class="text-center"><td class="text-end pe-0" data-order="Inactive">
-                                    <!--begin::Badges-->
-                                    <div class="badge badge-light-info">No Options</div>
-                                    <!--end::Badges-->
-                                </td></div>';
-                        case 1:
-                            return '<div class="text-center"><td class="text-end pe-0" data-order="Published">
-                                    <!--begin::Badges-->
-                                    <div class="badge badge-light-primary">Options</div>
-                                    <!--end::Badges-->
-                                </td></div>';
-                    }
-                })
-                ->addColumn('quantity', function ($products) {
-                    return $products->quantity < 10 ?
-                        '<div class="text-center"><td class="text-end pe-0" data-order="' . $products->quantity . '">
-                                <span class="badge badge-light-warning">Low stock</span>
-                                    <span class="text-end fw-bolder ms-3">' . $products->quantity . '</span>
-                                </td></div>'
-                        : '<div class="text-center"><td class="text-end pe-0" data-order="' . $products->quantity . '">
-                                    <span class="text-end fw-bolder ms-3">' . $products->quantity . '</span>
-                                </td></div>';
-                })
-                ->addColumn('price', function ($products) {
-                    return '<!--begin::Price=-->
-                               <div class="text-center"> <td class="text-end pe-0" data-order="' . $products->price . '">
-                                    <span class="fw-bolder text-dark">' . $products->price . ' KD</span>
-                                </td></div>
-                                <!--end::Price=-->';
-                })
                 ->addColumn('category', function ($products) {
                     $categories = '';
 
@@ -112,14 +80,14 @@ class ProductAdminController extends Controller
                             return '<!--begin::Status=-->
                                 <div class="text-center"><td class="text-end pe-0" data-order="Inactive">
                                     <!--begin::Badges-->
-                                    <div class="badge badge-light-danger">'.trans("str.Inactive").'</div>
+                                    <div class="badge badge-light-danger">' . trans("str.Inactive") . '</div>
                                     <!--end::Badges-->
                                 </td></div>
                                 <!--end::Status=-->';
                         case 1:
                             return '<div class="text-center"><td class="text-end pe-0" data-order="Published">
                                     <!--begin::Badges-->
-                                    <div class="badge badge-light-success">'.trans("str.Published").'</div>
+                                    <div class="badge badge-light-success">' . trans("str.Published") . '</div>
                                     <!--end::Badges-->
                                 </td></div>';
                         case 2:
@@ -189,9 +157,8 @@ class ProductAdminController extends Controller
                     $action = $action . '</div></div></div>';
                     return $action;
                 })
-                ->rawColumns(['id'],['name'], ['type'], ['quantity'], ['price'], ['category'], ['status'], ['pin_status'], ['action'])
-                ->escapeColumns(['id' => 'id'],['name' => 'name'], ['type' => 'type'], ['quantity' => 'quantity'], ['price' => 'price']
-                    , ['category' => 'category'], ['status' => 'status'], ['pin_status' => 'pin_status'], ['action' => 'action'])
+                ->rawColumns(['id'], ['name'], ['category'], ['status'], ['pin_status'], ['action'])
+                ->escapeColumns(['id' => 'id'], ['name' => 'name'], ['status' => 'status'], ['pin_status' => 'pin_status'], ['action' => 'action'])
                 ->make(true);
         }
         return view("admin.products.products", compact("products"));

@@ -155,18 +155,6 @@ $(function () {
                                 name: 'name',
                             },
                             {
-                                data: 'type',
-                                name: 'type',
-                            },
-                            {
-                                data: 'quantity',
-                                name: 'quantity',
-                            },
-                            {
-                                data: 'price',
-                                name: 'price',
-                            },
-                            {
                                 data: 'category',
                             }, {
                                 data: 'status',
