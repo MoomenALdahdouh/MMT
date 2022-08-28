@@ -14,12 +14,10 @@
             <div class="row">
                 <div class="col-md-7">
                     <div class="cv-banner-two-text cv-banner-three-text">
-                        <p class="cv-banner-cat">Upto 50% Off On Every Product</p>
-                        <h1>Medical personal protective equipment</h1>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                            dolore</p>
-                        <button class="cv-btn">Shop now</button>
+                        <p class="cv-banner-cat">@lang("sts.hint_title")</p>
+                        <h1>@lang("sts.project_sub_name")</h1>
+                        <p>@lang("sts.describe_title")</p>
+                        <a href="{{url("products")}}" class="cv-btn">@lang("sts.View products")</a>
                     </div>
                 </div>
                 <div class="col-md-5">
@@ -35,7 +33,7 @@
     <div id="service" class="cv-service spacer-top-less">
         <div class="container">
             <div class="cv-heading">
-                <h1>Best Services</h1>
+                <h1>@lang("sts.Best Services")</h1>
                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                     consequat.</p>
             </div>
@@ -258,18 +256,15 @@
                                     s180,80.69,180,179.873C436,303.264,379.54,372.158,304.645,393.099z"></path>
                             </svg>
                         </div>
-                        <h2 style="color: #242424">We are here to assist you</h2>
-                        <span style="color: #3cbcff">Always ready to provide the best solution</span>
-                        <p style="color: #242424">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi ut aliquip ex ea
-                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                            dolore</p>
+                        <h2 style="color: #242424">@lang("sts.We are here to assist you")</h2>
+                        <span style="color: #3cbcff">@lang("sts.Always ready to provide the best services")</span>
+                        <p style="color: #242424">@lang("sts.Your service is not listed, contact us, which service suits you, enjoy all our services.")</p>
                     </div>
                 </div>
                 <div class="col-md-12">
                     <div class="cv-help-quote">
-                        <h2 style="color: #3cbcff">Get a free quote</h2>
-                        <a href="#contact_us" class="cv-get-btn2">Get a qoute</a>
+                        <h2 style="color: #3cbcff">@lang("sts.Get A Service")</h2>
+                        <a href="#contact_us" class="cv-get-btn2">@lang("sts.Get Now")</a>
                     </div>
                 </div>
             </div>
@@ -290,14 +285,14 @@
     <div id="gallery" class="cv-product-gallery cv-product-three spacer-top-less">
         <div class="container">
             <div class="cv-heading">
-                <h1>@lang("str.Product gallery")</h1>
-                <p>@lang("str.Product gallery description")</p>
+                <h1>@lang("sts.Product Gallery")</h1>
+                <p>@lang("sts.Product gallery description")</p>
             </div>
             <div class="row">
                 <div class="col-12">
                     <div class="cv-product-nav cv-product-tab">
                         <ul>
-                            <li><a data-filter="*" class="cv-product-active">@lang("str.all products")</a></li>
+                            <li><a data-filter="*" class="cv-product-active">@lang("sts.All products")</a></li>
                             @foreach($categories as $category)
                                 <li><a data-filter=".{{ str_replace(' ','',lang($category))}}">{{lang($category)}}</a>
                                 </li>
@@ -313,7 +308,7 @@
                                         <img src="{{asset("uploads/products/$product->image")}}" alt="image"
                                              class="img-fluid"/>
                                         <div class="cv-product-button">
-                                            <a href="{{url("product")}}" class="cv-btn">
+                                            <a href="{{url("products/view/$product->id")}}" class="cv-btn">
                                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.312 461.312">
                                                     <g>
                                                         <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
@@ -327,8 +322,8 @@
                                                     s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
                                                     </g>
                                                 </svg>
-                                                @lang("str.View detail")</a>
-                                            {{--{{url("product")}}--}}
+                                                @lang("sts.View detail")</a>
+                                            {{--{{url("products/view/$pin_product->id")}}--}}
                                         </div>
                                     </div>
                                     <div class="cv-product-data">
@@ -341,7 +336,7 @@
                 </div>
             </div>
             <div class="row mt-5 text-center">
-                <a href="gallery">See All >></a>
+                <a href="{{url("products")}}" style="color: #3cbcff">@lang("sts.See All") >></a>
             </div>
         </div>
     </div>
@@ -365,7 +360,7 @@
                                                 <img src="{{asset("uploads/products/$pin_product->image")}}" alt="image"
                                                      class="img-fluid">
                                                 <div class="cv-product-button">
-                                                    <a href="{{url("product")}}" class="cv-btn">
+                                                    <a href="{{url("products/view/$pin_product->id")}}" class="cv-btn">
                                                         <svg xmlns="http://www.w3.org/2000/svg"
                                                              viewBox="0 0 461.312 461.312">
                                                             <g>
@@ -380,7 +375,7 @@
                                                             s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
                                                             </g>
                                                         </svg>
-                                                        @lang("str.View detail")</a>
+                                                        @lang("sts.View detail")</a>
                                                 </div>
                                             </div>
                                             <div class="cv-product-data">
@@ -396,7 +391,7 @@
                                                 <img src="{{asset("uploads/products/$pin_product->image")}}" alt="image"
                                                      class="img-fluid">
                                                 <div class="cv-product-button">
-                                                    <a href="{{url("product")}}" class="cv-btn">
+                                                    <a href="{{url("products/view/$pin_product->id")}}" class="cv-btn">
                                                         <svg xmlns="http://www.w3.org/2000/svg"
                                                              viewBox="0 0 461.312 461.312">
                                                             <g>
@@ -411,7 +406,7 @@
                                                         s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
                                                             </g>
                                                         </svg>
-                                                        @lang("str.View detail")</a>
+                                                        @lang("sts.View detail")</a>
                                                 </div>
                                             </div>
                                             <div class="cv-product-data">
@@ -428,7 +423,7 @@
                                                 <img src="{{asset("uploads/products/$pin_product->image")}}" alt="image"
                                                      class="img-fluid">
                                                 <div class="cv-product-button">
-                                                    <a href="{{url("product")}}" class="cv-btn">
+                                                    <a href="{{url("products/view/$pin_product->id")}}" class="cv-btn">
                                                         <svg xmlns="http://www.w3.org/2000/svg"
                                                              viewBox="0 0 461.312 461.312">
                                                             <g>
@@ -443,7 +438,7 @@
                                                         s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
                                                             </g>
                                                         </svg>
-                                                        @lang("str.View detail")</a>
+                                                        @lang("sts.View detail")</a>
                                                 </div>
                                             </div>
                                             <div class="cv-product-data">
@@ -459,7 +454,7 @@
                                                 <img src="{{asset("uploads/products/$pin_product->image")}}" alt="image"
                                                      class="img-fluid">
                                                 <div class="cv-product-button">
-                                                    <a href="{{url("product")}}" class="cv-btn">
+                                                    <a href="{{url("products/view/$pin_product->id")}}" class="cv-btn">
                                                         <svg xmlns="http://www.w3.org/2000/svg"
                                                              viewBox="0 0 461.312 461.312">
                                                             <g>
@@ -474,7 +469,7 @@
                                                         s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
                                                             </g>
                                                         </svg>
-                                                        @lang("str.View detail")</a>
+                                                        @lang("sts.View detail")</a>
                                                 </div>
                                             </div>
                                             <div class="cv-product-data">
@@ -491,7 +486,7 @@
                                                 <img src="{{asset("uploads/products/$pin_product->image")}}" alt="image"
                                                      class="img-fluid">
                                                 <div class="cv-product-button">
-                                                    <a href="{{url("product")}}" class="cv-btn">
+                                                    <a href="{{url("products/view/$pin_product->id")}}" class="cv-btn">
                                                         <svg xmlns="http://www.w3.org/2000/svg"
                                                              viewBox="0 0 461.312 461.312">
                                                             <g>
@@ -506,7 +501,7 @@
                                                         s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
                                                             </g>
                                                         </svg>
-                                                        @lang("str.View detail")</a>
+                                                        @lang("sts.View detail")</a>
                                                 </div>
                                             </div>
                                             <div class="cv-product-data">
@@ -522,7 +517,7 @@
                                                 <img src="{{asset("uploads/products/$pin_product->image")}}" alt="image"
                                                      class="img-fluid">
                                                 <div class="cv-product-button">
-                                                    <a href="{{url("product")}}" class="cv-btn">
+                                                    <a href="{{url("products/view/$pin_product->id")}}" class="cv-btn">
                                                         <svg xmlns="http://www.w3.org/2000/svg"
                                                              viewBox="0 0 461.312 461.312">
                                                             <g>
@@ -537,7 +532,7 @@
                                                         s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
                                                             </g>
                                                         </svg>
-                                                        @lang("str.View detail")</a>
+                                                        @lang("sts.View detail")</a>
                                                 </div>
                                             </div>
                                             <div class="cv-product-data">
@@ -554,7 +549,7 @@
                                                 <img src="{{asset("uploads/products/$pin_product->image")}}" alt="image"
                                                      class="img-fluid">
                                                 <div class="cv-product-button">
-                                                    <a href="{{url("product")}}" class="cv-btn">
+                                                    <a href="{{url("products/view/$pin_product->id")}}" class="cv-btn">
                                                         <svg xmlns="http://www.w3.org/2000/svg"
                                                              viewBox="0 0 461.312 461.312">
                                                             <g>
@@ -569,7 +564,7 @@
                                                         s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
                                                             </g>
                                                         </svg>
-                                                        @lang("str.View detail")</a>
+                                                        @lang("sts.View detail")</a>
                                                 </div>
                                             </div>
                                             <div class="cv-product-data">
@@ -585,7 +580,7 @@
                                                 <img src="{{asset("uploads/products/$pin_product->image")}}" alt="image"
                                                      class="img-fluid">
                                                 <div class="cv-product-button">
-                                                    <a href="{{url("product")}}" class="cv-btn">
+                                                    <a href="{{url("products/view/$pin_product->id")}}" class="cv-btn">
                                                         <svg xmlns="http://www.w3.org/2000/svg"
                                                              viewBox="0 0 461.312 461.312">
                                                             <g>
@@ -600,7 +595,7 @@
                                                         s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
                                                             </g>
                                                         </svg>
-                                                        @lang("str.View detail")</a>
+                                                        @lang("sts.View detail")</a>
                                                 </div>
                                             </div>
                                             <div class="cv-product-data">
@@ -617,7 +612,7 @@
                                                 <img src="{{asset("uploads/products/$pin_product->image")}}" alt="image"
                                                      class="img-fluid">
                                                 <div class="cv-product-button">
-                                                    <a href="{{url("product")}}" class="cv-btn">
+                                                    <a href="{{url("products/view/$pin_product->id")}}" class="cv-btn">
                                                         <svg xmlns="http://www.w3.org/2000/svg"
                                                              viewBox="0 0 461.312 461.312">
                                                             <g>
@@ -632,7 +627,7 @@
                                                         s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
                                                             </g>
                                                         </svg>
-                                                        @lang("str.View detail")</a>
+                                                        @lang("sts.View detail")</a>
                                                 </div>
                                             </div>
                                             <div class="cv-product-data">
@@ -648,7 +643,7 @@
                                                 <img src="{{asset("uploads/products/$pin_product->image")}}" alt="image"
                                                      class="img-fluid">
                                                 <div class="cv-product-button">
-                                                    <a href="{{url("product")}}" class="cv-btn">
+                                                    <a href="{{url("products/view/$pin_product->id")}}" class="cv-btn">
                                                         <svg xmlns="http://www.w3.org/2000/svg"
                                                              viewBox="0 0 461.312 461.312">
                                                             <g>
@@ -663,7 +658,7 @@
                                                         s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
                                                             </g>
                                                         </svg>
-                                                        @lang("str.View detail")</a>
+                                                        @lang("sts.View detail")</a>
                                                 </div>
                                             </div>
                                             <div class="cv-product-data">
@@ -687,47 +682,17 @@
     <div id="about_us" class="cv-instagram spacer-top-less">
         <div class="container">
             <div class="cv-heading">
-                <h1>About Us</h1>
+                <h1>@lang("sts.About Us")</h1>
             </div>
             <div class="row">
                 <div class="col-lg-5">
                     <div class="cv-about-img {{--spacer-top--}}">
-                        <img src="../assets/images/about.png" alt="image" class="img-fluid">
+                        <img src="{{asset("uploads/about_us/$about_us->image")}}" alt="image" class="img-fluid">
                     </div>
                 </div>
                 <div class="col-lg-7">
                     <div class="cv-about-content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <h2>Our Expertise</h2>
-                        <ul>
-                            <li>Heart Surgery</li>
-                            <li>Eye Surgery</li>
-                            <li>Brain Hemorrhage</li>
-                            <li>Respiratory problems</li>
-                            <li>Internal Injury</li>
-                            <li>Cancer disease</li>
-                            <li>Neurologist</li>
-                            <li>Heart Surgery</li>
-                            <li>Eye Surgery</li>
-                            <li>Brain Hemorrhage</li>
-                            <li>Dental Problem</li>
-                            <li>Respiratory problems</li>
-                            <li>Internal Injury</li>
-                            <li>Cancer disease</li>
-                            <li>Neurologist</li>
-                            <li>Dental Problem</li>
-                        </ul>
-                        <div class="cv-dr-box">
-                            <div class="cv-dr-name">
-                                <h3>Dr. Martin Guptil</h3>
-                                <p>Heart Surgeon</p>
-                            </div>
-                            <div class="cv-dr-signature">
-                                <img src="../assets/images/signature.png" alt="image" class="img-fluid">
-                            </div>
-                        </div>
+                        <p>{{lang_desc($about_us)}}</p>
                     </div>
                 </div>
             </div>
@@ -738,15 +703,14 @@
     <div id="contact_us" class="cv-conatact spacer-top spacer-bottom">
         <div class="container">
             <div class="cv-heading">
-                <h1>Contact Us</h1>
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.</p>
+                <h1>@lang("sts.Contact Us")</h1>
+                <p>@lang("sts.We work continuously to make your experience through government services easier, We will get back to you within 24 hours")</p>
             </div>
             <div class="row">
                 <div class="col-lg-4">
                     <div class="cv-contact-detail">
-                        <h2 class="cv-sidebar-title">Contact Info</h2>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                        <h2 class="cv-sidebar-title">@lang("sts.Contact Info")</h2>
+                        <p></p>
                         <ul>
                             <li>
                                 <div class="cv-contact-icon">
@@ -759,8 +723,8 @@
                                 </div>
                                 <div class="cv-contact-text"
                                      style="{{ config('app.locale') == "en" ? "":"padding-left: 0px; padding-right: 20px;" }} ">
-                                    <h3>Contact</h3>
-                                    <p>+001 456-789-2591</p>
+                                    <h3>@lang("sts.Contact")</h3>
+                                    <p>{{@$follow_us->mobile}}</p>
                                 </div>
                             </li>
                             <li>
@@ -786,8 +750,8 @@
                                 </div>
                                 <div class="cv-contact-text"
                                      style="{{ config('app.locale') == "en" ? "":"padding-left: 0px; padding-right: 20px;" }} ">
-                                    <h3>Email</h3>
-                                    <p>example@medical.com</p>
+                                    <h3>@lang("sts.Email")</h3>
+                                    <p>{{@$follow_us->email}}</p>
                                 </div>
                             </li>
                             <li>
@@ -801,52 +765,28 @@
                                 </div>
                                 <div class="cv-contact-text"
                                      style="{{ config('app.locale') == "en" ? "":"padding-left: 0px; padding-right: 20px;" }} ">
-                                    <h3>Location</h3>
-                                    <p>025 CAL California, America</p>
+                                    <h3>@lang("sts.OUR LOCATION")</h3>
+                                    <p>{{@custom_lang(@$follow_us,"location")}}</p>
                                 </div>
                             </li>
                             <li>
-                                <div class="cv-contact-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path d="M10.688,95.156C80.958,154.667,204.26,259.365,240.5,292.01c4.865,4.406,10.083,6.646,15.5,6.646
-                                            c5.406,0,10.615-2.219,15.469-6.604c36.271-32.677,159.573-137.385,229.844-196.896c4.375-3.698,5.042-10.198,1.5-14.719
-                                            C494.625,69.99,482.417,64,469.333,64H42.667c-13.083,0-25.292,5.99-33.479,16.438C5.646,84.958,6.313,91.458,10.688,95.156z"></path>
-                                        <path d="M505.813,127.406c-3.781-1.76-8.229-1.146-11.375,1.542c-46.021,39.01-106.656,90.552-152.385,129.885
-                                            c-2.406,2.063-3.76,5.094-3.708,8.271c0.052,3.167,1.521,6.156,4,8.135c42.49,34.031,106.521,80.844,152.76,114.115
-                                            c1.844,1.333,4.031,2.01,6.229,2.01c1.667,0,3.333-0.385,4.865-1.177c3.563-1.823,5.802-5.49,5.802-9.49V137.083
-                                            C512,132.927,509.583,129.146,505.813,127.406z"></path>
-                                        <path d="M16.896,389.354c46.25-33.271,110.292-80.083,152.771-114.115c2.479-1.979,3.948-4.969,4-8.135
-                                            c0.052-3.177-1.302-6.208-3.708-8.271C124.229,219.5,63.583,167.958,17.563,128.948c-3.167-2.688-7.625-3.281-11.375-1.542
-                                            C2.417,129.146,0,132.927,0,137.083v243.615c0,4,2.24,7.667,5.802,9.49c1.531,0.792,3.198,1.177,4.865,1.177
-                                            C12.865,391.365,15.052,390.688,16.896,389.354z"></path>
-                                        <path d="M498.927,418.375c-44.656-31.948-126.917-91.51-176.021-131.365c-4-3.26-9.792-3.156-13.729,0.24
-                                            c-9.635,8.406-17.698,15.49-23.417,20.635c-17.563,15.854-41.938,15.854-59.542-0.021c-5.698-5.135-13.76-12.24-23.396-20.615
-                                            c-3.906-3.417-9.708-3.521-13.719-0.24c-48.938,39.719-131.292,99.354-176.021,131.365c-2.49,1.792-4.094,4.552-4.406,7.604
-                                            c-0.302,3.052,0.708,6.083,2.802,8.333C19.552,443.01,30.927,448,42.667,448h426.667c11.74,0,23.104-4.99,31.198-13.688
-                                            c2.083-2.24,3.104-5.271,2.802-8.323C503.021,422.938,501.417,420.167,498.927,418.375z"></path>
-                                    </svg>
-                                </div>
-                                <div class="cv-contact-text"
-                                     style="{{ config('app.locale') == "en" ? "":"padding-left: 0px; padding-right: 20px;" }} ">
-                                    <h3>Fax</h3>
-                                    <p>+001 456-789-2591</p>
-                                </div>
+                                <img width="100%" class="rounded-3" src="{{asset("assets/images/contact.jpg")}}">
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-8">
                     <div class="cv-contact-form">
-                        <h2 class="cv-sidebar-title">Get a quote</h2>
+                        <h2 class="cv-sidebar-title">@lang("sts.Send Us A Message")</h2>
                         <form>
-                            <input type="text" placeholder="Enater your name" name="full_name" id="full_name"
+                            <input type="text" placeholder="@lang("sts.Enter your name")" name="full_name" id="full_name"
                                    class="require">
-                            <input type="text" placeholder="Enter your email" name="email" id="email" class="require"
+                            <input type="text" placeholder="@lang("sts.Enter your email")" name="email" id="email" class="require"
                                    data-valid="email" data-error="Email should be valid.">
-                            <input type="text" placeholder="Enter your subject" name="subject" id="subject"
+                            <input type="text" placeholder="@lang("sts.Enter your subject")" name="subject" id="subject"
                                    class="require">
-                            <textarea placeholder="Message here" name="message" id="message" class="require"></textarea>
-                            <button type="button" class="cv-btn submitForm">submit</button>
+                            <textarea placeholder="@lang("sts.Message here")" name="message" id="message" class="require"></textarea>
+                            <button type="button" class="cv-btn submitForm">@lang("sts.submit")</button>
                             <div class="response"></div>
                         </form>
                     </div>
@@ -857,9 +797,7 @@
     <!-- conatact end -->
     <!-- iframe start -->
     <div class="cv-contact-map">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12301.513435483917!2d-96.04069515802735!3d39.57362236131941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87be3e79433f6007%3A0x86baec447b34422!2sAmerica%20City%2C%20KS%2066540%2C%20USA!5e0!3m2!1sen!2sin!4v1588407931927!5m2!1sen!2sin"
-            aria-hidden="false" tabindex="0"></iframe>
+        {!! @$follow_us->map !!}
     </div>
     <!-- iframe end -->
     <!-- Instagram start -->

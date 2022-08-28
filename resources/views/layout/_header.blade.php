@@ -14,13 +14,12 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="cv-head-contact">
-                    <h3>Phone: <a style="color: #FFF; font-weight: bold" href="tel:+001 456-789-2591">+001
-                            456-789-2591</a></h3>
+                    <h3><i class="fa fa-phone-alt fa-fw"></i> <a style="color: #FFF; font-weight: bold" href="tel:+001 456-789-2591">{{@$follow_us->mobile}}</a></h3>
                 </div>
             </div>
             <div class="col-md-6 {{ $language == "en" ?"":"float-start" }}">
                 <div class="cv-head-email {{ $language == "en" ?"":"float-start" }}">
-                    <h3>Email : <a style="color: #FFF; font-weight: bold" href="mailto:support@domian.com">example@medical.com</a>
+                    <h3><i class="fa fa-envelope fa-fw"></i> <a style="color: #FFF; font-weight: bold" href="mailto:support@domian.com">{{@$follow_us->email}}</a>
                     </h3>
                 </div>
             </div>
@@ -43,11 +42,11 @@
                 <div class="cv-nav-bar">
                     <div class="cv-menu {{ $language == "en" ?"":"float-start" }}">
                         <ul>
-                            <li><a href="{{url("/")}}">Home</a></li>
-                            <li><a href="{{url("/#service")}}">Service</a></li>
-                            <li><a href="{{url("/#gallery")}}">Product Gallery</a></li>
-                            <li><a href="{{url("/#about_us")}}">About Us</a></li>
-                            <li><a href="{{url("/#contact_us")}}">Contact Us</a></li>
+                            <li><a class="fw-bolder " href="{{url("/")}}">@lang("sts.Home")</a></li>
+                            <li><a class="fw-bolder " href="{{url("/#service")}}">@lang("sts.Service")</a></li>
+                            <li><a class="fw-bolder " href="{{url("/#gallery")}}">@lang("sts.Product Gallery")</a></li>
+                            <li><a class="fw-bolder " href="{{url("/#about_us")}}">@lang("sts.About Us")</a></li>
+                            <li><a class="fw-bolder " href="{{url("/#contact_us")}}">@lang("sts.Contact Us")</a></li>
                             <li style="{{ config('app.locale') == "en" ? "":"margin-right: 25px" }} "
                                 class="cv-children-menu">
                                 <a href="javascript:;">

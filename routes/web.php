@@ -13,6 +13,7 @@ use App\Http\Controllers\admin\PrivacyPolicyAdminController;
 use App\Http\Controllers\admin\ProductAdminController;
 use App\Http\Controllers\admin\RoleController;
 use App\Http\Controllers\Admin\RolesAdminController;
+use App\Http\Controllers\admin\ServiceAdminController;
 use App\Http\Controllers\admin\SettingsAdminController;
 use App\Http\Controllers\admin\TermsConditionsAdminController;
 use App\Http\Controllers\Admin\UserAdminController;
@@ -20,6 +21,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CKEditorController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\LanguageController;
+use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\UploaderAdminController;
 use Illuminate\Support\Facades\Route;
 
@@ -45,13 +47,13 @@ Route::prefix('/')
         Route::get('/', 'index')->name('index');
     });
 
-Route::get('product', function () {
-    return view('single_product');
-});
+Route::prefix('products')
+    ->controller(ProductsController::class)
+    ->group(function () {
+        Route::get('/', 'index')->name('index');
+        Route::get('view/{id}', 'show')->name('view');
+    });
 
-Route::get('gallery', function () {
-    return view('gallery');
-});
 
 //Language rout
 Route::get('lang/{lang}', [LanguageController::class, 'switchLang'])->name('lang.switch');
@@ -151,6 +153,19 @@ Route::prefix('admin')->name('admin.')->group(function () {
                     Route::post('update/{id}', 'update')->name('update');
                     Route::post('store', 'store')->name('store');
                     Route::delete('delete/{id}', 'destroy')->name('delete');
+                });
+
+            Route::prefix('services')
+                ->name('services')
+                ->middleware('permission:services')
+                ->controller(ServiceAdminController::class)
+                ->group(function () {
+                    Route::get('/', 'index')->name('services');
+                    Route::get('create', 'create')->name('create')->middleware('permission:services_create');
+                    Route::get('edit/{id}', 'edit')->name('edit')->middleware('permission:services_edit');
+                    Route::delete('delete/{id}', 'destroy')->name('delete');
+                    Route::post('store', 'store')->name('store');
+                    Route::post('edit/update/{id}', 'update')->name('update');
                 });
 
             Route::prefix('categories')

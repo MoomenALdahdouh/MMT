@@ -671,4 +671,12 @@ return [
     'System Error' => 'خطأ في النظام',
     'Something went wrong! Please try again later.' => 'هناك خطأ ما! الرجاء معاودة المحاولة في وقت لاحق.',
     //End Errors pages
+    'copy_right' => 'All rights reserved 2022 | ',
+    'dev_by' => 'Developed by Eng.Moomen Aldahdouh',
+
+
+
+    '' => '',
+    '' => '',
+    '' => '',
 ];

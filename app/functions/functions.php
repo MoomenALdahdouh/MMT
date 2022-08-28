@@ -9,10 +9,24 @@ function admin($id)
     return Admin::query()->find($id);
 }
 
+function language()
+{
+    return config('app.locale');
+}
+
 function lang($data)
 {
     return $data->getTranslation('name', config('app.locale'));
     //return app()->getLocale() == 'ar' ? $data->name_ar : $data->name_en;
+}
+
+function lang_desc($data)
+{
+    return $data->getTranslation('description', config('app.locale'));
+}
+function custom_lang($data,$filed)
+{
+    return $data->getTranslation($filed, config('app.locale'));
 }
 
 

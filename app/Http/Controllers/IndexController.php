@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\AboutUs;
 use App\Models\Category;
+use App\Models\FollowUs;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -15,6 +17,8 @@ class IndexController extends Controller
         $data["categories"] = Category::query()->where("status", 1)->latest()->limit(6)->get();
         $data["products"] = Product::query()->where("status", 1)->latest()->limit(8)->get();
         $data["pin_products"] = Product::query()->where("status", 1)->where("pin_status", 1)->latest()->limit(10)->get();
+        $data["about_us"] = AboutUs::query()->get()->first();
+        $data["follow_us"] = FollowUs::query()->get()->first();
         return view("index", $data);
     }
 
