@@ -6,6 +6,7 @@ use App\Models\AboutUs;
 use App\Models\Category;
 use App\Models\FollowUs;
 use App\Models\Product;
+use App\Models\Service;
 use Illuminate\Http\Request;
 
 class IndexController extends Controller
@@ -19,6 +20,7 @@ class IndexController extends Controller
         $data["pin_products"] = Product::query()->where("status", 1)->where("pin_status", 1)->latest()->limit(10)->get();
         $data["about_us"] = AboutUs::query()->get()->first();
         $data["follow_us"] = FollowUs::query()->get()->first();
+        $data["services"] = Service::query()->latest()->limit(8)->get();
         return view("index", $data);
     }
 

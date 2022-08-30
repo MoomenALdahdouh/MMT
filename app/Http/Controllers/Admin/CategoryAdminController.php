@@ -20,7 +20,7 @@ class CategoryAdminController extends Controller
         if ($request->ajax()) {
             return DataTables::of($categories)
                 ->addColumn('id', function ($categories) {
-                    return '<a class="text-gray-800 text-hover-primary fw-bolder" ><div>#HK' . $categories->id . '</div></div>';
+                    return '<a class="text-gray-800 text-hover-primary fw-bolder" ><div>' . $categories->id . '</div></div>';
                 })
                 ->addColumn('name', function ($categories) {
                     $path_edit = "#";

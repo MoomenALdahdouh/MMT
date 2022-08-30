@@ -8,6 +8,8 @@ $(function () {
         service_name_input = $("#service_name"),
         image_file_input = $("#image_file_input"),
         service_name_en_input = $("#service_name_en"),
+        service_description_en_input = $("#service_description_en"),
+        service_description_input = $("#service_description"),
         uploaded_image = $("#uploaded_image"),
         meta_title_input = $("#meta_title"),
         meta_title_en_input = $("#meta_title_en"),
@@ -31,6 +33,8 @@ $(function () {
         submit_button.addEventListener('click', function () {
             let service_name = service_name_input.val(),
                 service_name_en = service_name_en_input.val(),
+                service_description_en = service_description_en_input.val(),
+                service_description = service_description_input.val(),
                 meta_title = meta_title_input.val(),
                 meta_title_en = meta_title_en_input.val(),
                 meta_description = meta_description_input.val(),
@@ -48,6 +52,8 @@ $(function () {
                 data: {
                     service_name: service_name,
                     service_name_en: service_name_en,
+                    service_description_en: service_description_en,
+                    service_description: service_description,
                     service_image: service_image,
                     image_updated: image_updated,
                     status: service_status,

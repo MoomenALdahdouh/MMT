@@ -5,7 +5,9 @@
 <!--Font Cairo-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;800&family=Lalezar&family=Poppins:wght@300&display=swap" rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;800&family=Lalezar&family=Poppins:wght@300&display=swap"
+    rel="stylesheet">
 {{--<link rel="stylesheet" type="text/css" href="{{asset("assets/css/style.css")}}">--}}
 <!-- My own style -->
 @if(app()->getLocale()=='ar')
@@ -21,6 +23,5 @@
 @else
     <link href="{{asset("assets/site/vendor/bootstrap-5.1.0-dist/css/bootstrap.min.css")}}" rel="stylesheet"/>
 @endif--}}
-
 @yield('site_css')
 {{--TODO:: MOOMEN S. ALDAHDOUH 1/20/2022--}}

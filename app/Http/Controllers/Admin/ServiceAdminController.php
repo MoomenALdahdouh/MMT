@@ -1,5 +1,6 @@
 <?php
 /*TODO:: By Eng. Moomen Sameer Aldahdouh 0599124279, moomenaldahdouh@gmail.com*/
+
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
@@ -17,7 +18,7 @@ class ServiceAdminController extends Controller
         if ($request->ajax()) {
             return DataTables::of($services)
                 ->addColumn('id', function ($services) {
-                    return '<a class="text-gray-800 text-hover-primary fw-bolder" ><div>#HK' . $services->id . '</div></div>';
+                    return '<a class="text-gray-800 text-hover-primary fw-bolder" ><div>' . $services->id . '</div></div>';
                 })
                 ->addColumn('name', function ($services) {
                     $path_edit = "#";
@@ -39,11 +40,6 @@ class ServiceAdminController extends Controller
                                                class="text-gray-800 text-hover-primary fs-5 fw-bolder mb-1"
                                                data-kt-ecommerce-services-filter="service_name">' . $services->getTranslation('name', config('app.locale')) . '</a>
                                             <!--end::Title-->
-                                            <!--begin::Description-->
-                                            <div class="text-muted fs-7 fw-bolder">
-                                            ' . count($services->product) . ' ' . trans("str.Products") . '
-                                            </div>
-                                            <!--end::Description-->
                                         </div>
                                     </div>
                                 <!--end::service=-->';
@@ -54,14 +50,14 @@ class ServiceAdminController extends Controller
                             return '<!--begin::Status=-->
                                 <div class="text-center"><div class="text-end pe-0" data-order="Inactive">
                                     <!--begin::Badges-->
-                                    <div class="badge badge-light-danger">'.trans("str.Inactive").'</div>
+                                    <div class="badge badge-light-danger">' . trans("str.Inactive") . '</div>
                                     <!--end::Badges-->
                                 </div></div>
                                 <!--end::Status=-->';
                         case 1:
                             return '<div class="text-center"><div class="text-end pe-0" data-order="Published">
                                     <!--begin::Badges-->
-                                    <div class="badge badge-light-success">'.trans("str.Published").'</div>
+                                    <div class="badge badge-light-success">' . trans("str.Published") . '</div>
                                     <!--end::Badges-->
                                 </div></div>';
                     }
@@ -92,7 +88,7 @@ class ServiceAdminController extends Controller
                     return $action;
                 })
                 ->rawColumns(['id'], ['name'], ['status'], ['action'])
-                ->escapeColumns(['id' => 'id'],['name' => 'name'], ['status' => 'status'], ['action' => 'action'])
+                ->escapeColumns(['id' => 'id'], ['name' => 'name'], ['status' => 'status'], ['action' => 'action'])
                 ->make(true);
         }
         return view("admin.services.services", compact('services'));
@@ -128,11 +124,9 @@ class ServiceAdminController extends Controller
                 file_put_contents($image_path, base64_decode($request->service_image));
                 $data = new service();
                 $data->name = ['ar' => $request->service_name, 'en' => $request->service_name_en];
+                $data->description = ['ar' => $request->service_description, 'en' => $request->service_description_en];
                 $data->image = $image;
                 $data->status = $request->status;
-                $data->type = 0;
-                $data->meta_title = ['ar' => $request->meta_title, 'en' => $request->meta_title_en];
-                $data->meta_description = ['ar' => $request->meta_description, 'en' => $request->meta_description_en];
                 $data->created_at = Carbon::now();
                 $data->updated_at = Carbon::now();
                 $data->save();
@@ -171,9 +165,8 @@ class ServiceAdminController extends Controller
                     $data->image = $image;
                 }
                 $data->name = ['ar' => $request->service_name, 'en' => $request->service_name_en];
+                $data->description = ['ar' => $request->service_description, 'en' => $request->service_description_en];
                 $data->status = $request->status;
-                $data->meta_title = ['ar' => $request->meta_title, 'en' => $request->meta_title_en];
-                $data->meta_description = ['ar' => $request->meta_description, 'en' => $request->meta_description_en];
                 $data->updated_at = Carbon::now();
                 $data->save();
                 return response()->json(['success' => $data->id]);

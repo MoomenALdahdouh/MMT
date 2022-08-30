@@ -14,12 +14,15 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="cv-head-contact">
-                    <h3><i class="fa fa-phone-alt fa-fw"></i> <a style="color: #FFF; font-weight: bold" href="tel:+001 456-789-2591">{{@$follow_us->mobile}}</a></h3>
+                    <h3><i class="fa fa-phone-alt fa-fw"></i> <a style="color: #FFF; font-weight: bold"
+                                                                 href="tel:+001 456-789-2591">{{@$follow_us->mobile}}</a>
+                    </h3>
                 </div>
             </div>
             <div class="col-md-6 {{ $language == "en" ?"":"float-start" }}">
                 <div class="cv-head-email {{ $language == "en" ?"":"float-start" }}">
-                    <h3><i class="fa fa-envelope fa-fw"></i> <a style="color: #FFF; font-weight: bold" href="mailto:support@domian.com">{{@$follow_us->email}}</a>
+                    <h3><i class="fa fa-envelope fa-fw"></i> <a style="color: #FFF; font-weight: bold"
+                                                                href="mailto:support@domian.com">{{@$follow_us->email}}</a>
                     </h3>
                 </div>
             </div>
@@ -49,7 +52,7 @@
                             <li><a class="fw-bolder " href="{{url("/#contact_us")}}">@lang("sts.Contact Us")</a></li>
                             <li style="{{ config('app.locale') == "en" ? "":"margin-right: 25px" }} "
                                 class="cv-children-menu">
-                                <a href="javascript:;">
+                                <a class=" " href="javascript:;">
                                     <span class="">
                                         <span
                                             class="">{{ Config::get('language')[App::getLocale()] }}
@@ -69,7 +72,7 @@
                                     @foreach (Config::get('language') as $lang => $language)
                                         @if ($lang == App::getLocale())
                                             <li>
-                                                <a class="active" href="{{ route('lang.switch', $lang) }}">
+                                                <a class="active {{language() == "en"? "" : "float-end" }}" href="{{ route('lang.switch', $lang) }}">
                                                     <span class="">
                                                             @if($lang == "ar")
                                                             <img width="15px" class="w-15px h-15px rounded-1 ms-2"
@@ -87,7 +90,7 @@
                                         @else
                                             <li>
                                                 <a href="{{ route('lang.switch', $lang) }}"
-                                                   class="">
+                                                   class="{{language() == "en"? "" : "float-end" }}">
                                                         <span class="">
                                                             @if($lang == "ar")
                                                                 <img width="15px" class="w-15px h-15px rounded-1 ms-2"
@@ -123,5 +126,5 @@
 <!-- main header end -->
 <!-- main header -->
 <script>
-    $("langhref").attr("href", "{{url("/")}}");
+    /*$("langhref").attr("href", "{{url("/")}}");*/
 </script>

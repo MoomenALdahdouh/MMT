@@ -14,6 +14,12 @@
     <meta name="keywords" content="@yield("site_keywords")"/>
     <meta name="copyright" content="@yield("site_copyright")"/>
     {{--TODO:: MOOMEN S. ALDAHDOUH 1/20/2022--}}
+    @php
+        use App\Models\AboutUs;
+        use App\Models\FollowUs;
+        $about_us = AboutUs::query()->get()->first();
+        $follow_us = FollowUs::query()->get()->first();
+    @endphp
     @include('layout.links')
 </head>
 <body>

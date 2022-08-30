@@ -14,6 +14,13 @@ function language()
     return config('app.locale');
 }
 
+function is_en()
+{
+    if (config('app.locale') == "en")
+        return true;
+    return false;
+}
+
 function lang($data)
 {
     return $data->getTranslation('name', config('app.locale'));
@@ -24,7 +31,8 @@ function lang_desc($data)
 {
     return $data->getTranslation('description', config('app.locale'));
 }
-function custom_lang($data,$filed)
+
+function custom_lang($data, $filed)
 {
     return $data->getTranslation($filed, config('app.locale'));
 }
@@ -35,6 +43,7 @@ function get_permission_by_name($name)
     $permission = Permission::query()->where("name", $name)->where("status", 1)->get()->first();
     return $permission;
 }
+
 function asdasdas($name)
 {
     $permission = Permission::query()->where("name", $name)->where("status", 1)->get()->first();

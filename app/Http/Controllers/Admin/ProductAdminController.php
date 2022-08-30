@@ -26,7 +26,7 @@ class ProductAdminController extends Controller
         if ($request->ajax()) {
             return DataTables::of($products)
                 ->addColumn('id', function ($categories) {
-                    return '<a class="text-gray-800 text-hover-primary fw-bolder" ><div>#HK' . $categories->id . '</div></div>';
+                    return '<a class="text-gray-800 text-hover-primary fw-bolder" ><div>' . $categories->id . '</div></div>';
                 })
                 ->addColumn('name', function ($products) {
                     $path_edit = "#";

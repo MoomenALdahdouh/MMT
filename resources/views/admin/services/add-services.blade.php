@@ -79,9 +79,10 @@
                                     <div id="uploaded_image" class="image-input-wrapper w-150px h-150px"></div>
                                     <!--end::Preview existing avatar-->
                                     <!--begin::Label-->
-                                    <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
-                                           data-kt-image-input-action="change" data-bs-toggle="tooltip"
-                                           title="Change avatar">
+                                    <label
+                                        class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
+                                        data-kt-image-input-action="change" data-bs-toggle="tooltip"
+                                        title="Change avatar">
                                         <!--begin::Icon-->
                                         <i class="bi bi-pencil-fill fs-7"></i>
                                         <!--end::Icon-->
@@ -94,16 +95,18 @@
                                     </label>
                                     <!--end::Label-->
                                     <!--begin::Cancel-->
-                                    <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
-                                          data-kt-image-input-action="cancel" data-bs-toggle="tooltip"
-                                          title="Cancel avatar">
+                                    <span
+                                        class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
+                                        data-kt-image-input-action="cancel" data-bs-toggle="tooltip"
+                                        title="Cancel avatar">
 														<i class="bi bi-x fs-2"></i>
 													</span>
                                     <!--end::Cancel-->
                                     <!--begin::Remove-->
-                                    <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
-                                          data-kt-image-input-action="remove" data-bs-toggle="tooltip"
-                                          title="Remove avatar">
+                                    <span
+                                        class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
+                                        data-kt-image-input-action="remove" data-bs-toggle="tooltip"
+                                        title="Remove avatar">
 														<i class="bi bi-x fs-2"></i>
 													</span>
                                     <!--end::Remove-->
@@ -113,7 +116,8 @@
                                 <div>
                                     <strong id="service_image_error" class="errors text-danger fs-7"></strong>
                                 </div>
-                                <div class="required text-muted fs-7">{{__("str.Set the service thumbnail image. Only *.png, *.jpg and *.jpeg image files are accepted and size 1M")}}
+                                <div
+                                    class="required text-muted fs-7">{{__("str.Set the service thumbnail image. Only *.png, *.jpg and *.jpeg image files are accepted and size 1M")}}
                                 </div>
                                 <!--end::Description-->
                             </div>
@@ -186,13 +190,14 @@
                                     <!--end::Label-->
                                     <!--begin::Input-->
                                     <input id="service_name" type="text" name="service_name" class="form-control mb-2"
-                                           placeholder="{{__("str.Service name")}}" value=""/>
+                                           placeholder="{{__("str.Enter Here")}}" value=""/>
                                     <!--end::Input-->
                                     <!--begin::Error-->
                                     <strong id="service_name_error" class="errors text-danger fs-7"></strong>
                                     <!--end::Error-->
                                     <!--begin::Description-->
-                                    <div class="text-muted fs-7">{{__("str.A service name is required and recommended to be  unique.")}}</div>
+                                    <div
+                                        class="text-muted fs-7">{{__("str.A service name is required and recommended to be unique.")}}</div>
                                     <!--end::Description-->
                                 </div>
                                 <!--end::Input group-->
@@ -204,13 +209,50 @@
                                     <!--begin::Input-->
                                     <input id="service_name_en" type="text" name="service_name_en"
                                            class="form-control mb-2"
-                                           placeholder="{{__("str.Service name")}}" value=""/>
+                                           placeholder="{{__("str.Enter Here")}}" value=""/>
                                     <!--end::Input-->
                                     <!--begin::Error-->
                                     <strong id="service_name_en_error" class="errors text-danger fs-7"></strong>
                                     <!--end::Error-->
                                     <!--begin::Description-->
-                                    <div class="text-muted fs-7">{{__("str.A service name is required and recommended to be unique.")}}</div>
+                                    <div
+                                        class="text-muted fs-7">{{__("str.A service name is required and recommended to be unique.")}}</div>
+                                    <!--end::Description-->
+                                </div>
+                                <!--end::Input group-->
+                                <!--begin::Input group-->
+                                <div class="mb-10 fv-row">
+                                    <!--begin::Label-->
+                                    <label
+                                        class="required form-label">{{__("str.Service Description (Arabic)")}}</label>
+                                    <!--end::Label-->
+                                    <!--begin::Input-->
+                                    <textarea id="service_description" type="text" name="service_description"
+                                              class="form-control mb-2"
+                                              rows="3"
+                                              placeholder="{{__("str.Enter Here")}}"></textarea>
+                                    <!--end::Input-->
+                                    <!--begin::Error-->
+                                    <strong id="service_description_error" class="errors text-danger fs-7"></strong>
+                                    <!--end::Error-->
+                                </div>
+                                <!--end::Input group-->
+                                <!--begin::Input group-->
+                                <div class="mb-10 fv-row">
+                                    <!--begin::Label-->
+                                    <label
+                                        class="required form-label">{{__("str.Service Description (English)")}}</label>
+                                    <!--end::Label-->
+                                    <!--begin::Input-->
+                                    <textarea id="service_description_en" type="text" name="service_description_en"
+                                              class="form-control mb-2"
+                                              rows="3"
+                                              placeholder="{{__("str.Enter Here")}}"></textarea>
+                                    <!--end::Input-->
+                                    <!--begin::Error-->
+                                    <strong id="service_description_en_error" class="errors text-danger fs-7"></strong>
+                                    <!--end::Error-->
+                                    <!--begin::Description-->
                                     <!--end::Description-->
                                 </div>
                                 <!--end::Input group-->
@@ -219,81 +261,6 @@
                         </div>
                         <!--end::General options-->
                         <!--begin::Meta options-->
-                        <div class="card card-flush py-4">
-                            <!--begin::Card header-->
-                            <div class="card-header">
-                                <div class="card-title">
-                                    <h2>{{__("str.Meta Options")}}</h2>
-                                </div>
-                            </div>
-                            <!--end::Card header-->
-                            <!--begin::Card body-->
-                            <div class="card-body pt-0">
-                                <!--begin::Input group-->
-                                <div class="mb-10">
-                                    <!--begin::Label-->
-                                    <label class="form-label">{{__("str.Meta Tag Title (Arabic)")}}</label>
-                                    <!--end::Label-->
-                                    <!--begin::Input-->
-                                    <input id="meta_title" type="text" class="form-control mb-2" name="meta_title"
-                                           placeholder="{{__("str.Meta tag name")}}"/>
-                                    <!--end::Input-->
-                                    <!--begin::Description-->
-                                    <div class="text-muted fs-7">{{__("str.Set a meta tag title. Recommended to be simple and precise keywords.")}}
-                                    </div>
-                                    <!--end::Description-->
-                                </div>
-                                <!--end::Input group-->
-                                <!--begin::Input group-->
-                                <div class="mb-10">
-                                    <!--begin::Label-->
-                                    <label class="form-label">{{__("str.Meta Tag Title (English)")}}</label>
-                                    <!--end::Label-->
-                                    <!--begin::Input-->
-                                    <input id="meta_title_en" type="text" class="form-control mb-2" name="meta_title"
-                                           placeholder="{{__("str.Meta tag name")}}"/>
-                                    <!--end::Input-->
-                                    <!--begin::Description-->
-                                    <div class="text-muted fs-7">{{__("str.Set a meta tag title. Recommended to be simple and precise keywords.")}}
-                                    </div>
-                                    <!--end::Description-->
-                                </div>
-                                <!--end::Input group-->
-                                <!--begin::Input group-->
-                                <div class="mb-10">
-                                    <!--begin::Label-->
-                                    <label class="form-label">{{__("str.Meta Tag Description (Arabic)")}}</label>
-                                    <!--end::Label-->
-                                    <!--begin::Editor-->
-                                    <input id="meta_description" type="text" class="form-control mb-2" name="meta_title"
-                                           placeholder="{{__("str.Meta tag Description")}}"/>
-                                    <!--end::Editor-->
-                                    <!--begin::Description-->
-                                    <div class="text-muted fs-7">{{__("str.Set a meta tag description to the service for increased SEO ranking.")}}
-                                    </div>
-                                    <!--end::Description-->
-                                </div>
-                                <!--end::Input group-->
-                                <!--begin::Input group-->
-                                <div class="mb-10">
-                                    <!--begin::Label-->
-                                    <label class="form-label">{{__("str.Meta Tag Description (English)")}}</label>
-                                    <!--end::Label-->
-                                    <!--begin::Editor-->
-                                    <input id="meta_description_en" type="text" class="form-control mb-2"
-                                           name="meta_title"
-                                           placeholder="{{__("str.Meta tag Description")}}"/>
-                                    <!--end::Editor-->
-                                    <!--begin::Description-->
-                                    <div class="text-muted fs-7">{{__("str.Set a meta tag description to the service for  increased SEO ranking.")}}
-                                    </div>
-                                    <!--end::Description-->
-                                </div>
-                                <!--end::Input group-->
-                            </div>
-                            <!--end::Card header-->
-                        </div>
-                        <!--end::Meta options-->
                         <div class="d-flex justify-content-end">
                             <!--begin::Button-->
                             <a href="{{ url()->previous() }}"

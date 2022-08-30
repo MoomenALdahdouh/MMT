@@ -40,23 +40,29 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6">
                     <ul class="cv-service-ul">
-                        <li>
-                            <div class="cv-service-box">
-                                <div class="cv-service-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-38 0 512 512.00142">
-                                        <path
-                                            d="M 217.996094 158.457031 C 164.203125 158.457031 120.441406 202.21875 120.441406 256.007812 C 120.441406 309.800781 164.203125 353.5625 217.996094 353.5625 C 271.785156 353.5625 315.546875 309.800781 315.546875 256.007812 C 315.546875 202.21875 271.785156 158.457031 217.996094 158.457031 Z M 275.914062 237.636719 L 206.027344 307.523438 C 203.09375 310.457031 199.246094 311.925781 195.402344 311.925781 C 191.558594 311.925781 187.714844 310.460938 184.78125 307.523438 L 158.074219 280.816406 C 152.207031 274.953125 152.207031 265.441406 158.074219 259.574219 C 163.9375 253.707031 173.449219 253.707031 179.316406 259.574219 L 195.402344 275.660156 L 254.671875 216.394531 C 260.535156 210.527344 270.046875 210.527344 275.914062 216.394531 C 281.78125 222.257812 281.78125 231.769531 275.914062 237.636719 Z M 275.914062 237.636719 "></path>
-                                        <path
-                                            d="M 435.488281 138.917969 L 435.472656 138.519531 C 435.25 133.601562 435.101562 128.398438 435.011719 122.609375 C 434.59375 94.378906 412.152344 71.027344 383.917969 69.449219 C 325.050781 66.164062 279.511719 46.96875 240.601562 9.042969 L 240.269531 8.726562 C 227.578125 -2.910156 208.433594 -2.910156 195.738281 8.726562 L 195.40625 9.042969 C 156.496094 46.96875 110.957031 66.164062 52.089844 69.453125 C 23.859375 71.027344 1.414062 94.378906 0.996094 122.613281 C 0.910156 128.363281 0.757812 133.566406 0.535156 138.519531 L 0.511719 139.445312 C -0.632812 199.472656 -2.054688 274.179688 22.9375 341.988281 C 36.679688 379.277344 57.492188 411.691406 84.792969 438.335938 C 115.886719 468.679688 156.613281 492.769531 205.839844 509.933594 C 207.441406 510.492188 209.105469 510.945312 210.800781 511.285156 C 213.191406 511.761719 215.597656 512 218.003906 512 C 220.410156 512 222.820312 511.761719 225.207031 511.285156 C 226.902344 510.945312 228.578125 510.488281 230.1875 509.925781 C 279.355469 492.730469 320.039062 468.628906 351.105469 438.289062 C 378.394531 411.636719 399.207031 379.214844 412.960938 341.917969 C 438.046875 273.90625 436.628906 199.058594 435.488281 138.917969 Z M 217.996094 383.605469 C 147.636719 383.605469 90.398438 326.367188 90.398438 256.007812 C 90.398438 185.648438 147.636719 128.410156 217.996094 128.410156 C 288.351562 128.410156 345.59375 185.648438 345.59375 256.007812 C 345.59375 326.367188 288.351562 383.605469 217.996094 383.605469 Z M 217.996094 383.605469 "></path>
-                                    </svg>
-                                </div>
-                                <div class="cv-service-text"
-                                     style="{{ config('app.locale') == "en" ? "":"padding: 0 15px 0 0;" }} ">
-                                    <h3>qualified products</h3>
-                                    <p>Quis nostrud exercitation ullamco laboris nisi ut commodo consequat.</p>
-                                </div>
-                            </div>
-                        </li>
+                        @foreach($services as $k=>$service)
+                            @if($k % 2 == 0)
+                                {{--Event--}}
+                                <li>
+                                    <div class="cv-service-box">
+                                        <div class="cv-service-icon">
+                                            {{--<svg xmlns="http://www.w3.org/2000/svg" viewBox="-38 0 512 512.00142">
+                                                <path
+                                                    d="M 217.996094 158.457031 C 164.203125 158.457031 120.441406 202.21875 120.441406 256.007812 C 120.441406 309.800781 164.203125 353.5625 217.996094 353.5625 C 271.785156 353.5625 315.546875 309.800781 315.546875 256.007812 C 315.546875 202.21875 271.785156 158.457031 217.996094 158.457031 Z M 275.914062 237.636719 L 206.027344 307.523438 C 203.09375 310.457031 199.246094 311.925781 195.402344 311.925781 C 191.558594 311.925781 187.714844 310.460938 184.78125 307.523438 L 158.074219 280.816406 C 152.207031 274.953125 152.207031 265.441406 158.074219 259.574219 C 163.9375 253.707031 173.449219 253.707031 179.316406 259.574219 L 195.402344 275.660156 L 254.671875 216.394531 C 260.535156 210.527344 270.046875 210.527344 275.914062 216.394531 C 281.78125 222.257812 281.78125 231.769531 275.914062 237.636719 Z M 275.914062 237.636719 "></path>
+                                                <path
+                                                    d="M 435.488281 138.917969 L 435.472656 138.519531 C 435.25 133.601562 435.101562 128.398438 435.011719 122.609375 C 434.59375 94.378906 412.152344 71.027344 383.917969 69.449219 C 325.050781 66.164062 279.511719 46.96875 240.601562 9.042969 L 240.269531 8.726562 C 227.578125 -2.910156 208.433594 -2.910156 195.738281 8.726562 L 195.40625 9.042969 C 156.496094 46.96875 110.957031 66.164062 52.089844 69.453125 C 23.859375 71.027344 1.414062 94.378906 0.996094 122.613281 C 0.910156 128.363281 0.757812 133.566406 0.535156 138.519531 L 0.511719 139.445312 C -0.632812 199.472656 -2.054688 274.179688 22.9375 341.988281 C 36.679688 379.277344 57.492188 411.691406 84.792969 438.335938 C 115.886719 468.679688 156.613281 492.769531 205.839844 509.933594 C 207.441406 510.492188 209.105469 510.945312 210.800781 511.285156 C 213.191406 511.761719 215.597656 512 218.003906 512 C 220.410156 512 222.820312 511.761719 225.207031 511.285156 C 226.902344 510.945312 228.578125 510.488281 230.1875 509.925781 C 279.355469 492.730469 320.039062 468.628906 351.105469 438.289062 C 378.394531 411.636719 399.207031 379.214844 412.960938 341.917969 C 438.046875 273.90625 436.628906 199.058594 435.488281 138.917969 Z M 217.996094 383.605469 C 147.636719 383.605469 90.398438 326.367188 90.398438 256.007812 C 90.398438 185.648438 147.636719 128.410156 217.996094 128.410156 C 288.351562 128.410156 345.59375 185.648438 345.59375 256.007812 C 345.59375 326.367188 288.351562 383.605469 217.996094 383.605469 Z M 217.996094 383.605469 "></path>
+                                            </svg>--}}
+                                            <img src="{{asset("uploads/services/$service->image")}}">
+                                        </div>
+                                        <div class="cv-service-text"
+                                             style="{{ config('app.locale') == "en" ? "":"padding: 0 15px 0 0;" }} ">
+                                            <h3>{{custom_lang($service, "name")}}</h3>
+                                            <p>{{custom_lang($service, "description")}}</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            @endif
+                        @endforeach
                         <li>
                             <div class="cv-service-box">
                                 <div class="cv-service-icon">
@@ -135,39 +141,44 @@
                             </div>
                         </li>
                     </ul>
-                </div>
+                </div>{{--Right--}}
                 <div class="col-lg-4 col-md-6 order-lg-last">
                     <ul class="cv-service-ul cv-service-ul-right">
-                        <li>
-                            <div class="cv-service-box">
-                                <div class="cv-service-text"
-                                     style="{{ config('app.locale') == "en" ? "":"text-align: left;    padding: 0 0 0 15px;" }} ">
-                                    <h3>Varified products</h3>
-                                    <p>Quis nostrud exercitation ullamco laboris nisi ut commodo consequat.</p>
-                                </div>
-                                <div class="cv-service-icon">
-                                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                        <g>
-                                            <path
-                                                d="m87.161 209.789 168.839 55.967 168.839-55.967-168.839-55.966z"></path>
-                                            <path
-                                                d="m466.078 227.725-187.182 62.047 45.846 72.825 187.183-62.048z"></path>
-                                            <path
-                                                d="m241 333.54-40.875 64.927-145.637-48.276v99.984l186.512 61.825z"></path>
-                                            <path
-                                                d="m311.875 398.467-40.875-64.927v178.46l186.512-61.825v-99.984z"></path>
-                                            <path
-                                                d="m187.258 362.597 45.846-72.825-187.182-62.047-45.847 72.824z"></path>
-                                            <path d="m241 0h30v100.174h-30z"></path>
-                                            <path d="m122.957 31.63h30v100.174h-30z"
-                                                  transform="matrix(.866 -.5 .5 .866 -22.376 79.926)"></path>
-                                            <path d="m323.957 66.717h100.174v30h-100.174z"
-                                                  transform="matrix(.5 -.866 .866 .5 116.252 364.788)"></path>
-                                        </g>
-                                    </svg>
-                                </div>
-                            </div>
-                        </li>
+                        @foreach($services as $k=>$service)
+                            @if($k % 2 != 0)
+                                <li>
+                                    <div class="cv-service-box">
+                                        <div class="cv-service-text"
+                                             style="{{ config('app.locale') == "en" ? "":"text-align: left;    padding: 0 0 0 15px;" }} ">
+                                            <h3>Varified products</h3>
+                                            <p>Quis nostrud exercitation ullamco laboris nisi ut commodo consequat.</p>
+                                        </div>
+                                        <div class="cv-service-icon">
+                                            {{--<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <g>
+                                                    <path
+                                                        d="m87.161 209.789 168.839 55.967 168.839-55.967-168.839-55.966z"></path>
+                                                    <path
+                                                        d="m466.078 227.725-187.182 62.047 45.846 72.825 187.183-62.048z"></path>
+                                                    <path
+                                                        d="m241 333.54-40.875 64.927-145.637-48.276v99.984l186.512 61.825z"></path>
+                                                    <path
+                                                        d="m311.875 398.467-40.875-64.927v178.46l186.512-61.825v-99.984z"></path>
+                                                    <path
+                                                        d="m187.258 362.597 45.846-72.825-187.182-62.047-45.847 72.824z"></path>
+                                                    <path d="m241 0h30v100.174h-30z"></path>
+                                                    <path d="m122.957 31.63h30v100.174h-30z"
+                                                          transform="matrix(.866 -.5 .5 .866 -22.376 79.926)"></path>
+                                                    <path d="m323.957 66.717h100.174v30h-100.174z"
+                                                          transform="matrix(.5 -.866 .866 .5 116.252 364.788)"></path>
+                                                </g>
+                                            </svg>--}}
+                                            <img src="{{asset("uploads/services/$service->image")}}">
+                                        </div>
+                                    </div>
+                                </li>
+                            @endif
+                        @endforeach
                         <li>
                             <div class="cv-service-box">
                                 <div class="cv-service-text"
@@ -227,12 +238,12 @@
                             </div>
                         </li>
                     </ul>
-                </div>
+                </div>{{--Left--}}
                 <div class="col-lg-4">
                     <div class="cv-service-img">
                         <img src="../assets/images/service-img.png" alt="image" class="img-fluid">
                     </div>
-                </div>
+                </div>{{--Image--}}
             </div>
         </div>
     </div>
@@ -352,320 +363,348 @@
                             @foreach($pin_products as $k=>$pin_product)
                                 @switch($k)
                                     @case(0)
-                                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1"
-                                         style="width: 352px; margin-right: 30px;">
-                                        <div class="cv-product-box">
-                                            <div class="cv-product-img">
-                                                {{--{{--<span class="cv-sale">sale</span>--}}--}}
-                                                <img src="{{asset("uploads/products/$pin_product->image")}}" alt="image"
-                                                     class="img-fluid">
-                                                <div class="cv-product-button">
-                                                    <a href="{{url("products/view/$pin_product->id")}}" class="cv-btn">
-                                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                                             viewBox="0 0 461.312 461.312">
-                                                            <g>
-                                                                <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
+                                        <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1"
+                                             style="width: 352px; margin-right: 30px;">
+                                            <div class="cv-product-box">
+                                                <div class="cv-product-img">
+                                                    {{--{{--<span class="cv-sale">sale</span>--}}--}}
+                                                    <img src="{{asset("uploads/products/$pin_product->image")}}"
+                                                         alt="image"
+                                                         class="img-fluid">
+                                                    <div class="cv-product-button">
+                                                        <a href="{{url("products/view/$pin_product->id")}}"
+                                                           class="cv-btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                 viewBox="0 0 461.312 461.312">
+                                                                <g>
+                                                                    <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
                                                             S271.616,156.416,230.656,156.416z M225.024,208.64c-9.216,0-16.896,7.68-16.896,16.896h-24.576
                                                             c0.512-23.04,18.944-41.472,41.472-41.472V208.64z"></path>
-                                                            </g>
-                                                            <g>
-                                                                <path d="M455.936,215.296c-25.088-31.232-114.688-133.12-225.28-133.12S30.464,184.064,5.376,215.296
+                                                                </g>
+                                                                <g>
+                                                                    <path d="M455.936,215.296c-25.088-31.232-114.688-133.12-225.28-133.12S30.464,184.064,5.376,215.296
                                                             c-7.168,8.704-7.168,21.504,0,30.72c25.088,31.232,114.688,133.12,225.28,133.12s200.192-101.888,225.28-133.12
                                                             C463.104,237.312,463.104,224.512,455.936,215.296z M230.656,338.176c-59.392,0-107.52-48.128-107.52-107.52
                                                             s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
-                                                            </g>
-                                                        </svg>
-                                                        @lang("sts.View detail")</a>
+                                                                </g>
+                                                            </svg>
+                                                            @lang("sts.View detail")</a>
+                                                    </div>
+                                                </div>
+                                                <div class="cv-product-data">
+                                                    {{lang($pin_product)}}
                                                 </div>
                                             </div>
-                                            <div class="cv-product-data">
-                                                {{lang($pin_product)}}
-                                            </div>
                                         </div>
-                                    </div>
                                     @case(1)
-                                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
-                                         data-swiper-slide-index="2" style="width: 352px; margin-right: 30px;">
-                                        <div class="cv-product-box">
-                                            <div class="cv-product-img">
-                                                <img src="{{asset("uploads/products/$pin_product->image")}}" alt="image"
-                                                     class="img-fluid">
-                                                <div class="cv-product-button">
-                                                    <a href="{{url("products/view/$pin_product->id")}}" class="cv-btn">
-                                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                                             viewBox="0 0 461.312 461.312">
-                                                            <g>
-                                                                <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
+                                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
+                                             data-swiper-slide-index="2" style="width: 352px; margin-right: 30px;">
+                                            <div class="cv-product-box">
+                                                <div class="cv-product-img">
+                                                    <img src="{{asset("uploads/products/$pin_product->image")}}"
+                                                         alt="image"
+                                                         class="img-fluid">
+                                                    <div class="cv-product-button">
+                                                        <a href="{{url("products/view/$pin_product->id")}}"
+                                                           class="cv-btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                 viewBox="0 0 461.312 461.312">
+                                                                <g>
+                                                                    <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
                                                         S271.616,156.416,230.656,156.416z M225.024,208.64c-9.216,0-16.896,7.68-16.896,16.896h-24.576
                                                         c0.512-23.04,18.944-41.472,41.472-41.472V208.64z"></path>
-                                                            </g>
-                                                            <g>
-                                                                <path d="M455.936,215.296c-25.088-31.232-114.688-133.12-225.28-133.12S30.464,184.064,5.376,215.296
+                                                                </g>
+                                                                <g>
+                                                                    <path d="M455.936,215.296c-25.088-31.232-114.688-133.12-225.28-133.12S30.464,184.064,5.376,215.296
                                                         c-7.168,8.704-7.168,21.504,0,30.72c25.088,31.232,114.688,133.12,225.28,133.12s200.192-101.888,225.28-133.12
                                                         C463.104,237.312,463.104,224.512,455.936,215.296z M230.656,338.176c-59.392,0-107.52-48.128-107.52-107.52
                                                         s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
-                                                            </g>
-                                                        </svg>
-                                                        @lang("sts.View detail")</a>
+                                                                </g>
+                                                            </svg>
+                                                            @lang("sts.View detail")</a>
+                                                    </div>
+                                                </div>
+                                                <div class="cv-product-data">
+                                                    {{lang($pin_product)}}
                                                 </div>
                                             </div>
-                                            <div class="cv-product-data">
-                                                {{lang($pin_product)}}
-                                            </div>
                                         </div>
-                                    </div>
                                     @case(2)
-                                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
-                                         data-swiper-slide-index="3" style="width: 352px; margin-right: 30px;">
-                                        <div class="cv-product-box">
-                                            <div class="cv-product-img">
-                                                {{--<span class="cv-sale">sale</span>--}}
-                                                <img src="{{asset("uploads/products/$pin_product->image")}}" alt="image"
-                                                     class="img-fluid">
-                                                <div class="cv-product-button">
-                                                    <a href="{{url("products/view/$pin_product->id")}}" class="cv-btn">
-                                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                                             viewBox="0 0 461.312 461.312">
-                                                            <g>
-                                                                <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
+                                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                                             data-swiper-slide-index="3" style="width: 352px; margin-right: 30px;">
+                                            <div class="cv-product-box">
+                                                <div class="cv-product-img">
+                                                    {{--<span class="cv-sale">sale</span>--}}
+                                                    <img src="{{asset("uploads/products/$pin_product->image")}}"
+                                                         alt="image"
+                                                         class="img-fluid">
+                                                    <div class="cv-product-button">
+                                                        <a href="{{url("products/view/$pin_product->id")}}"
+                                                           class="cv-btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                 viewBox="0 0 461.312 461.312">
+                                                                <g>
+                                                                    <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
                                                         S271.616,156.416,230.656,156.416z M225.024,208.64c-9.216,0-16.896,7.68-16.896,16.896h-24.576
                                                         c0.512-23.04,18.944-41.472,41.472-41.472V208.64z"></path>
-                                                            </g>
-                                                            <g>
-                                                                <path d="M455.936,215.296c-25.088-31.232-114.688-133.12-225.28-133.12S30.464,184.064,5.376,215.296
+                                                                </g>
+                                                                <g>
+                                                                    <path d="M455.936,215.296c-25.088-31.232-114.688-133.12-225.28-133.12S30.464,184.064,5.376,215.296
                                                         c-7.168,8.704-7.168,21.504,0,30.72c25.088,31.232,114.688,133.12,225.28,133.12s200.192-101.888,225.28-133.12
                                                         C463.104,237.312,463.104,224.512,455.936,215.296z M230.656,338.176c-59.392,0-107.52-48.128-107.52-107.52
                                                         s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
-                                                            </g>
-                                                        </svg>
-                                                        @lang("sts.View detail")</a>
+                                                                </g>
+                                                            </svg>
+                                                            @lang("sts.View detail")</a>
+                                                    </div>
+                                                </div>
+                                                <div class="cv-product-data">
+                                                    {{lang($pin_product)}}
                                                 </div>
                                             </div>
-                                            <div class="cv-product-data">
-                                                {{lang($pin_product)}}
-                                            </div>
                                         </div>
-                                    </div>
                                     @case(3)
-                                    <div class="swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="0"
-                                         style="width: 352px; margin-right: 30px;">
-                                        <div class="cv-product-box">
-                                            <div class="cv-product-img">
-                                                <img src="{{asset("uploads/products/$pin_product->image")}}" alt="image"
-                                                     class="img-fluid">
-                                                <div class="cv-product-button">
-                                                    <a href="{{url("products/view/$pin_product->id")}}" class="cv-btn">
-                                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                                             viewBox="0 0 461.312 461.312">
-                                                            <g>
-                                                                <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
+                                        <div class="swiper-slide swiper-slide-duplicate-next"
+                                             data-swiper-slide-index="0"
+                                             style="width: 352px; margin-right: 30px;">
+                                            <div class="cv-product-box">
+                                                <div class="cv-product-img">
+                                                    <img src="{{asset("uploads/products/$pin_product->image")}}"
+                                                         alt="image"
+                                                         class="img-fluid">
+                                                    <div class="cv-product-button">
+                                                        <a href="{{url("products/view/$pin_product->id")}}"
+                                                           class="cv-btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                 viewBox="0 0 461.312 461.312">
+                                                                <g>
+                                                                    <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
                                                         S271.616,156.416,230.656,156.416z M225.024,208.64c-9.216,0-16.896,7.68-16.896,16.896h-24.576
                                                         c0.512-23.04,18.944-41.472,41.472-41.472V208.64z"></path>
-                                                            </g>
-                                                            <g>
-                                                                <path d="M455.936,215.296c-25.088-31.232-114.688-133.12-225.28-133.12S30.464,184.064,5.376,215.296
+                                                                </g>
+                                                                <g>
+                                                                    <path d="M455.936,215.296c-25.088-31.232-114.688-133.12-225.28-133.12S30.464,184.064,5.376,215.296
                                                         c-7.168,8.704-7.168,21.504,0,30.72c25.088,31.232,114.688,133.12,225.28,133.12s200.192-101.888,225.28-133.12
                                                         C463.104,237.312,463.104,224.512,455.936,215.296z M230.656,338.176c-59.392,0-107.52-48.128-107.52-107.52
                                                         s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
-                                                            </g>
-                                                        </svg>
-                                                        @lang("sts.View detail")</a>
+                                                                </g>
+                                                            </svg>
+                                                            @lang("sts.View detail")</a>
+                                                    </div>
+                                                </div>
+                                                <div class="cv-product-data">
+                                                    <a href="javascript:;"
+                                                       class="cv-price-title">{{lang($pin_product)}}</a>
                                                 </div>
                                             </div>
-                                            <div class="cv-product-data">
-                                                <a href="javascript:;" class="cv-price-title">{{lang($pin_product)}}</a>
-                                            </div>
                                         </div>
-                                    </div>
                                     @case(4)
-                                    <div class="swiper-slide" data-swiper-slide-index="1"
-                                         style="width: 352px; margin-right: 30px;">
-                                        <div class="cv-product-box">
-                                            <div class="cv-product-img">
-                                                {{--<span class="cv-sale">sale</span>--}}
-                                                <img src="{{asset("uploads/products/$pin_product->image")}}" alt="image"
-                                                     class="img-fluid">
-                                                <div class="cv-product-button">
-                                                    <a href="{{url("products/view/$pin_product->id")}}" class="cv-btn">
-                                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                                             viewBox="0 0 461.312 461.312">
-                                                            <g>
-                                                                <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
+                                        <div class="swiper-slide" data-swiper-slide-index="1"
+                                             style="width: 352px; margin-right: 30px;">
+                                            <div class="cv-product-box">
+                                                <div class="cv-product-img">
+                                                    {{--<span class="cv-sale">sale</span>--}}
+                                                    <img src="{{asset("uploads/products/$pin_product->image")}}"
+                                                         alt="image"
+                                                         class="img-fluid">
+                                                    <div class="cv-product-button">
+                                                        <a href="{{url("products/view/$pin_product->id")}}"
+                                                           class="cv-btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                 viewBox="0 0 461.312 461.312">
+                                                                <g>
+                                                                    <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
                                                         S271.616,156.416,230.656,156.416z M225.024,208.64c-9.216,0-16.896,7.68-16.896,16.896h-24.576
                                                         c0.512-23.04,18.944-41.472,41.472-41.472V208.64z"></path>
-                                                            </g>
-                                                            <g>
-                                                                <path d="M455.936,215.296c-25.088-31.232-114.688-133.12-225.28-133.12S30.464,184.064,5.376,215.296
+                                                                </g>
+                                                                <g>
+                                                                    <path d="M455.936,215.296c-25.088-31.232-114.688-133.12-225.28-133.12S30.464,184.064,5.376,215.296
                                                         c-7.168,8.704-7.168,21.504,0,30.72c25.088,31.232,114.688,133.12,225.28,133.12s200.192-101.888,225.28-133.12
                                                         C463.104,237.312,463.104,224.512,455.936,215.296z M230.656,338.176c-59.392,0-107.52-48.128-107.52-107.52
                                                         s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
-                                                            </g>
-                                                        </svg>
-                                                        @lang("sts.View detail")</a>
+                                                                </g>
+                                                            </svg>
+                                                            @lang("sts.View detail")</a>
+                                                    </div>
+                                                </div>
+                                                <div class="cv-product-data">
+                                                    <a href="javascript:;"
+                                                       class="cv-price-title">{{lang($pin_product)}}</a>
                                                 </div>
                                             </div>
-                                            <div class="cv-product-data">
-                                                <a href="javascript:;" class="cv-price-title">{{lang($pin_product)}}</a>
-                                            </div>
                                         </div>
-                                    </div>
                                     @case(5)
-                                    <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="2"
-                                         style="width: 352px; margin-right: 30px;">
-                                        <div class="cv-product-box">
-                                            <div class="cv-product-img">
-                                                <img src="{{asset("uploads/products/$pin_product->image")}}" alt="image"
-                                                     class="img-fluid">
-                                                <div class="cv-product-button">
-                                                    <a href="{{url("products/view/$pin_product->id")}}" class="cv-btn">
-                                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                                             viewBox="0 0 461.312 461.312">
-                                                            <g>
-                                                                <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
+                                        <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="2"
+                                             style="width: 352px; margin-right: 30px;">
+                                            <div class="cv-product-box">
+                                                <div class="cv-product-img">
+                                                    <img src="{{asset("uploads/products/$pin_product->image")}}"
+                                                         alt="image"
+                                                         class="img-fluid">
+                                                    <div class="cv-product-button">
+                                                        <a href="{{url("products/view/$pin_product->id")}}"
+                                                           class="cv-btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                 viewBox="0 0 461.312 461.312">
+                                                                <g>
+                                                                    <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
                                                         S271.616,156.416,230.656,156.416z M225.024,208.64c-9.216,0-16.896,7.68-16.896,16.896h-24.576
                                                         c0.512-23.04,18.944-41.472,41.472-41.472V208.64z"></path>
-                                                            </g>
-                                                            <g>
-                                                                <path d="M455.936,215.296c-25.088-31.232-114.688-133.12-225.28-133.12S30.464,184.064,5.376,215.296
+                                                                </g>
+                                                                <g>
+                                                                    <path d="M455.936,215.296c-25.088-31.232-114.688-133.12-225.28-133.12S30.464,184.064,5.376,215.296
                                                         c-7.168,8.704-7.168,21.504,0,30.72c25.088,31.232,114.688,133.12,225.28,133.12s200.192-101.888,225.28-133.12
                                                         C463.104,237.312,463.104,224.512,455.936,215.296z M230.656,338.176c-59.392,0-107.52-48.128-107.52-107.52
                                                         s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
-                                                            </g>
-                                                        </svg>
-                                                        @lang("sts.View detail")</a>
+                                                                </g>
+                                                            </svg>
+                                                            @lang("sts.View detail")</a>
+                                                    </div>
+                                                </div>
+                                                <div class="cv-product-data">
+                                                    <a href="javascript:;"
+                                                       class="cv-price-title">{{lang($pin_product)}}</a>
                                                 </div>
                                             </div>
-                                            <div class="cv-product-data">
-                                                <a href="javascript:;" class="cv-price-title">{{lang($pin_product)}}</a>
-                                            </div>
                                         </div>
-                                    </div>
                                     @case(6)
-                                    <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="3"
-                                         style="width: 352px; margin-right: 30px;">
-                                        <div class="cv-product-box">
-                                            <div class="cv-product-img">
-                                                {{--<span class="cv-sale">sale</span>--}}
-                                                <img src="{{asset("uploads/products/$pin_product->image")}}" alt="image"
-                                                     class="img-fluid">
-                                                <div class="cv-product-button">
-                                                    <a href="{{url("products/view/$pin_product->id")}}" class="cv-btn">
-                                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                                             viewBox="0 0 461.312 461.312">
-                                                            <g>
-                                                                <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
+                                        <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="3"
+                                             style="width: 352px; margin-right: 30px;">
+                                            <div class="cv-product-box">
+                                                <div class="cv-product-img">
+                                                    {{--<span class="cv-sale">sale</span>--}}
+                                                    <img src="{{asset("uploads/products/$pin_product->image")}}"
+                                                         alt="image"
+                                                         class="img-fluid">
+                                                    <div class="cv-product-button">
+                                                        <a href="{{url("products/view/$pin_product->id")}}"
+                                                           class="cv-btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                 viewBox="0 0 461.312 461.312">
+                                                                <g>
+                                                                    <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
                                                         S271.616,156.416,230.656,156.416z M225.024,208.64c-9.216,0-16.896,7.68-16.896,16.896h-24.576
                                                         c0.512-23.04,18.944-41.472,41.472-41.472V208.64z"></path>
-                                                            </g>
-                                                            <g>
-                                                                <path d="M455.936,215.296c-25.088-31.232-114.688-133.12-225.28-133.12S30.464,184.064,5.376,215.296
+                                                                </g>
+                                                                <g>
+                                                                    <path d="M455.936,215.296c-25.088-31.232-114.688-133.12-225.28-133.12S30.464,184.064,5.376,215.296
                                                         c-7.168,8.704-7.168,21.504,0,30.72c25.088,31.232,114.688,133.12,225.28,133.12s200.192-101.888,225.28-133.12
                                                         C463.104,237.312,463.104,224.512,455.936,215.296z M230.656,338.176c-59.392,0-107.52-48.128-107.52-107.52
                                                         s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
-                                                            </g>
-                                                        </svg>
-                                                        @lang("sts.View detail")</a>
+                                                                </g>
+                                                            </svg>
+                                                            @lang("sts.View detail")</a>
+                                                    </div>
+                                                </div>
+                                                <div class="cv-product-data">
+                                                    <a href="javascript:;"
+                                                       class="cv-price-title">{{lang($pin_product)}}</a>
                                                 </div>
                                             </div>
-                                            <div class="cv-product-data">
-                                                <a href="javascript:;" class="cv-price-title">{{lang($pin_product)}}</a>
-                                            </div>
                                         </div>
-                                    </div>
                                     @case(7)
-                                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-next"
-                                         data-swiper-slide-index="0" style="width: 352px; margin-right: 30px;">
-                                        <div class="cv-product-box">
-                                            <div class="cv-product-img">
-                                                <img src="{{asset("uploads/products/$pin_product->image")}}" alt="image"
-                                                     class="img-fluid">
-                                                <div class="cv-product-button">
-                                                    <a href="{{url("products/view/$pin_product->id")}}" class="cv-btn">
-                                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                                             viewBox="0 0 461.312 461.312">
-                                                            <g>
-                                                                <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
+                                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-next"
+                                             data-swiper-slide-index="0" style="width: 352px; margin-right: 30px;">
+                                            <div class="cv-product-box">
+                                                <div class="cv-product-img">
+                                                    <img src="{{asset("uploads/products/$pin_product->image")}}"
+                                                         alt="image"
+                                                         class="img-fluid">
+                                                    <div class="cv-product-button">
+                                                        <a href="{{url("products/view/$pin_product->id")}}"
+                                                           class="cv-btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                 viewBox="0 0 461.312 461.312">
+                                                                <g>
+                                                                    <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
                                                         S271.616,156.416,230.656,156.416z M225.024,208.64c-9.216,0-16.896,7.68-16.896,16.896h-24.576
                                                         c0.512-23.04,18.944-41.472,41.472-41.472V208.64z"></path>
-                                                            </g>
-                                                            <g>
-                                                                <path d="M455.936,215.296c-25.088-31.232-114.688-133.12-225.28-133.12S30.464,184.064,5.376,215.296
+                                                                </g>
+                                                                <g>
+                                                                    <path d="M455.936,215.296c-25.088-31.232-114.688-133.12-225.28-133.12S30.464,184.064,5.376,215.296
                                                         c-7.168,8.704-7.168,21.504,0,30.72c25.088,31.232,114.688,133.12,225.28,133.12s200.192-101.888,225.28-133.12
                                                         C463.104,237.312,463.104,224.512,455.936,215.296z M230.656,338.176c-59.392,0-107.52-48.128-107.52-107.52
                                                         s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
-                                                            </g>
-                                                        </svg>
-                                                        @lang("sts.View detail")</a>
+                                                                </g>
+                                                            </svg>
+                                                            @lang("sts.View detail")</a>
+                                                    </div>
+                                                </div>
+                                                <div class="cv-product-data">
+                                                    <a href="javascript:;"
+                                                       class="cv-price-title">{{lang($pin_product)}}</a>
                                                 </div>
                                             </div>
-                                            <div class="cv-product-data">
-                                                <a href="javascript:;" class="cv-price-title">{{lang($pin_product)}}</a>
-                                            </div>
                                         </div>
-                                    </div>
                                     @case(8)
-                                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1"
-                                         style="width: 352px; margin-right: 30px;">
-                                        <div class="cv-product-box">
-                                            <div class="cv-product-img">
-                                                {{--<span class="cv-sale">sale</span>--}}
-                                                <img src="{{asset("uploads/products/$pin_product->image")}}" alt="image"
-                                                     class="img-fluid">
-                                                <div class="cv-product-button">
-                                                    <a href="{{url("products/view/$pin_product->id")}}" class="cv-btn">
-                                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                                             viewBox="0 0 461.312 461.312">
-                                                            <g>
-                                                                <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
+                                        <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1"
+                                             style="width: 352px; margin-right: 30px;">
+                                            <div class="cv-product-box">
+                                                <div class="cv-product-img">
+                                                    {{--<span class="cv-sale">sale</span>--}}
+                                                    <img src="{{asset("uploads/products/$pin_product->image")}}"
+                                                         alt="image"
+                                                         class="img-fluid">
+                                                    <div class="cv-product-button">
+                                                        <a href="{{url("products/view/$pin_product->id")}}"
+                                                           class="cv-btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                 viewBox="0 0 461.312 461.312">
+                                                                <g>
+                                                                    <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
                                                         S271.616,156.416,230.656,156.416z M225.024,208.64c-9.216,0-16.896,7.68-16.896,16.896h-24.576
                                                         c0.512-23.04,18.944-41.472,41.472-41.472V208.64z"></path>
-                                                            </g>
-                                                            <g>
-                                                                <path d="M455.936,215.296c-25.088-31.232-114.688-133.12-225.28-133.12S30.464,184.064,5.376,215.296
+                                                                </g>
+                                                                <g>
+                                                                    <path d="M455.936,215.296c-25.088-31.232-114.688-133.12-225.28-133.12S30.464,184.064,5.376,215.296
                                                         c-7.168,8.704-7.168,21.504,0,30.72c25.088,31.232,114.688,133.12,225.28,133.12s200.192-101.888,225.28-133.12
                                                         C463.104,237.312,463.104,224.512,455.936,215.296z M230.656,338.176c-59.392,0-107.52-48.128-107.52-107.52
                                                         s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
-                                                            </g>
-                                                        </svg>
-                                                        @lang("sts.View detail")</a>
+                                                                </g>
+                                                            </svg>
+                                                            @lang("sts.View detail")</a>
+                                                    </div>
+                                                </div>
+                                                <div class="cv-product-data">
+                                                    <a href="javascript:;"
+                                                       class="cv-price-title">{{lang($pin_product)}}</a>
                                                 </div>
                                             </div>
-                                            <div class="cv-product-data">
-                                                <a href="javascript:;" class="cv-price-title">{{lang($pin_product)}}</a>
-                                            </div>
                                         </div>
-                                    </div>
                                     @case(9)
-                                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
-                                         data-swiper-slide-index="2" style="width: 352px; margin-right: 30px;">
-                                        <div class="cv-product-box">
-                                            <div class="cv-product-img">
-                                                <img src="{{asset("uploads/products/$pin_product->image")}}" alt="image"
-                                                     class="img-fluid">
-                                                <div class="cv-product-button">
-                                                    <a href="{{url("products/view/$pin_product->id")}}" class="cv-btn">
-                                                        <svg xmlns="http://www.w3.org/2000/svg"
-                                                             viewBox="0 0 461.312 461.312">
-                                                            <g>
-                                                                <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
+                                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
+                                             data-swiper-slide-index="2" style="width: 352px; margin-right: 30px;">
+                                            <div class="cv-product-box">
+                                                <div class="cv-product-img">
+                                                    <img src="{{asset("uploads/products/$pin_product->image")}}"
+                                                         alt="image"
+                                                         class="img-fluid">
+                                                    <div class="cv-product-button">
+                                                        <a href="{{url("products/view/$pin_product->id")}}"
+                                                           class="cv-btn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg"
+                                                                 viewBox="0 0 461.312 461.312">
+                                                                <g>
+                                                                    <path d="M230.656,156.416c-40.96,0-74.24,33.28-74.24,74.24s33.28,74.24,74.24,74.24s74.24-33.28,74.24-74.24
                                                         S271.616,156.416,230.656,156.416z M225.024,208.64c-9.216,0-16.896,7.68-16.896,16.896h-24.576
                                                         c0.512-23.04,18.944-41.472,41.472-41.472V208.64z"></path>
-                                                            </g>
-                                                            <g>
-                                                                <path d="M455.936,215.296c-25.088-31.232-114.688-133.12-225.28-133.12S30.464,184.064,5.376,215.296
+                                                                </g>
+                                                                <g>
+                                                                    <path d="M455.936,215.296c-25.088-31.232-114.688-133.12-225.28-133.12S30.464,184.064,5.376,215.296
                                                         c-7.168,8.704-7.168,21.504,0,30.72c25.088,31.232,114.688,133.12,225.28,133.12s200.192-101.888,225.28-133.12
                                                         C463.104,237.312,463.104,224.512,455.936,215.296z M230.656,338.176c-59.392,0-107.52-48.128-107.52-107.52
                                                         s48.128-107.52,107.52-107.52s107.52,48.128,107.52,107.52S290.048,338.176,230.656,338.176z"></path>
-                                                            </g>
-                                                        </svg>
-                                                        @lang("sts.View detail")</a>
+                                                                </g>
+                                                            </svg>
+                                                            @lang("sts.View detail")</a>
+                                                    </div>
+                                                </div>
+                                                <div class="cv-product-data">
+                                                    <a href="javascript:;"
+                                                       class="cv-price-title">{{lang($pin_product)}}</a>
                                                 </div>
                                             </div>
-                                            <div class="cv-product-data">
-                                                <a href="javascript:;" class="cv-price-title">{{lang($pin_product)}}</a>
-                                            </div>
                                         </div>
-                                    </div>
                                 @endswitch
                             @endforeach
                         </div>
@@ -779,15 +818,19 @@
                     <div class="cv-contact-form">
                         <h2 class="cv-sidebar-title">@lang("sts.Send Us A Message")</h2>
                         <form>
-                            <input type="text" placeholder="@lang("sts.Enter your name")" name="full_name" id="full_name"
+                            @csrf
+                            <input type="text" placeholder="@lang("sts.Enter your name")" name="full_name"
+                                   id="full_name"
                                    class="require">
-                            <input type="text" placeholder="@lang("sts.Enter your email")" name="email" id="email" class="require"
+                            <input type="text" placeholder="@lang("sts.Enter your email")" name="email" id="email"
+                                   class="require"
                                    data-valid="email" data-error="Email should be valid.">
                             <input type="text" placeholder="@lang("sts.Enter your subject")" name="subject" id="subject"
                                    class="require">
-                            <textarea placeholder="@lang("sts.Message here")" name="message" id="message" class="require"></textarea>
-                            <button type="button" class="cv-btn submitForm">@lang("sts.submit")</button>
-                            <div class="response"></div>
+                            <textarea placeholder="@lang("sts.Message here")" name="message" id="message"
+                                      class="require"></textarea>
+                            <button id="send_message" type="button" class="cv-btn submitForm">@lang("sts.submit")</button>
+                            <div class="response" style="font-weight: bold;{{is_en() ? "right:0" :  "left:0 !important; right:unset !important"}}"></div>
                         </form>
                     </div>
                 </div>
@@ -805,4 +848,5 @@
     <!-- partner start -->
 @endsection
 @section('site_js')
+    {{--<script src="{{ asset('assets/admin/js/contact_us/create_contact.js') }}" defer></script>--}}
 @endsection

@@ -19,8 +19,10 @@ $(function () {
 
         $(document).on('click', '#edit', function () {
             let id = $(this).data('id');
+            let subject = $(this).data('subject');
             let message = $(this).data('message');
             let status = $(this).data('status');
+            $("#message_subject").html(subject);
             $("#message_body").html(message);
             /*$("#kt_modal_contact input").attr("id", "message_status" + id)
             console.log(status)

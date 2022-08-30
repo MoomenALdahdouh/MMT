@@ -130,7 +130,7 @@ class ContactUsAdminController extends Controller
                         $action = $action . '<div class="menu-item px-3">
                                             <!--begin::Add customer-->
                                         <a class="menu-link px-3" data-bs-toggle="modal" id="edit" href="#" data-id="' . $contacts->id . '"
-                                        data-message="' . $contacts->message . '" data-status="' . $contacts->status . '"
+                                        data-message="' . $contacts->message . '"  data-subject="' . $contacts->subject . '" data-status="' . $contacts->status . '"
                                                 data-bs-target="#kt_modal_contact">' . trans("str.View") . '
                                         </a>
                                         <!--end::Add customer-->

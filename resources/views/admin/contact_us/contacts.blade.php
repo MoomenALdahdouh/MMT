@@ -184,58 +184,15 @@
                             <!--end::Notice-->
                             <!--end::Notice-->
                             <!--begin::User form-->
-                            <p class="fs-3 fw-bolder">{{__("str.Message:")}}</p>
+                            {{--<p class="fs-3 fw-bolder">{{__("str.Message:")}}</p>--}}
+                            <p class="fs-3 fw-bolder" id="message_subject"></p>
                             <p class="fs-3" id="message_body"></p>
-                            <!--                            <div>
-                                                            <table class="table">
-                                                                <thead>
-                                                                <tr style="width: 85%">
-                                                                    <th class="fs-4 text-gray-800 fw-bolder" scope="col" style="width: 80%">Message</th>
-                                                                    <th class="fs-4 text-gray-800 fw-bolder" scope="col" style="width: 20%">Status</th>
-                                                                </tr>
-                                                                </thead>
-                                                                <tbody>
-                                                                <tr style="width: 15%">
-                                                                    <th>
-                                                                        <p class="fs-3" id="message_body"></p>
-                                                                    </th>
-                                                                    <th>
-                                                                        <div class="row mb-10">
-                                                                            &lt;!&ndash;                                                <label class="col-lg-3 col-form-label text-lg-end">Loader:</label>&ndash;&gt;
-                                                                            <div class="col-lg-9 col-xl-4">
-                                                                                <div class="form-check form-check-custom form-check-solid form-switch mb-2">
-                                                                                    <input id="message_status" class="form-check-input" type="checkbox" value="true">
-                                                                                </div>
-                                                                                &lt;!&ndash;                                                    <div class="form-text text-muted">Display page loading</div>&ndash;&gt;
-                                                                            </div>
-                                                                        </div>
-                                                                    </th>
-                                                                </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>-->
                             <!--end::User form-->
                         </div>
                         <!--end::Scroll-->
                     </div>
                     <!--end::Modal body-->
-                    <!--begin::Modal footer-->
-                    <!--                    <div class="modal-footer flex-center">
-                                            &lt;!&ndash;begin::Button&ndash;&gt;
-                                            <button type="reset" id="kt_modal_add_customer_cancel" data-bs-dismiss="modal"
-                                                    aria-label="Close"
-                                                    class="btn btn-light me-3">Discard
-                                            </button>
-                                            &lt;!&ndash;end::Button&ndash;&gt;
-                                            &lt;!&ndash;begin::Button&ndash;&gt;
-                                            <button type="submit" id="kt_modal_add_customer_submit" class="btn btn-primary">
-                                                <span class="indicator-label">Submit</span>
-                                                <span class="indicator-progress">Please wait...
-                                                                            <span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-                                            </button>
-                                            &lt;!&ndash;end::Button&ndash;&gt;
-                                        </div>-->
-                    <!--end::Modal footer-->
+                    <!--begin::Modal footer--><!--end::Modal footer-->
                 </div>
                 <!--end::Form-->
             </div>
@@ -244,92 +201,6 @@
     </div>
     <!--end::Modal - Customers - Add-->
     <!--begin::Modal - Adjust Balance-->
-    <div class="modal fade" id="kt_customers_export_modal" tabindex="-1" aria-hidden="true">
-        <!--begin::Modal dialog-->
-        <div class="modal-dialog modal-dialog-centered mw-650px">
-            <!--begin::Modal content-->
-            <div class="modal-content">
-                <!--begin::Modal header-->
-                <div class="modal-header">
-                    <!--begin::Modal title-->
-                    <h2 class="fw-bolder">{{__("str.Export Contacts")}}</h2>
-                    <!--end::Modal title-->
-                    <!--begin::Close-->
-                    <div id="kt_customers_export_close" class="btn btn-icon btn-sm btn-active-icon-primary">
-                        <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
-                        <span class="svg-icon svg-icon-1">
-														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                             viewBox="0 0 24 24" fill="none">
-															<rect opacity="0.5" x="6" y="17.3137" width="16" height="2"
-                                                                  rx="1" transform="rotate(-45 6 17.3137)"
-                                                                  fill="black"/>
-															<rect x="7.41422" y="6" width="16" height="2" rx="1"
-                                                                  transform="rotate(45 7.41422 6)" fill="black"/>
-														</svg>
-													</span>
-                        <!--end::Svg Icon-->
-                    </div>
-                    <!--end::Close-->
-                </div>
-                <!--end::Modal header-->
-                <!--begin::Modal body-->
-                <div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
-                    <!--begin::Form-->
-                    <form id="kt_customers_export_form" class="form" method="post"
-                          action="{{url("/admin/report/customers")}}">
-                    @csrf
-                    <!--begin::Input group-->
-                        <div class="fv-row mb-10">
-                            <!--begin::Label-->
-                            <label class="fs-5 fw-bold form-label mb-5">{{__("str.Select Export Format:")}}</label>
-                            <!--end::Label-->
-                            <!--begin::Input-->
-                            <select id="type_export_selector" data-control="select2"
-                                    data-placeholder="{{__("str.Select a format")}}"
-                                    data-hide-search="true" name="type"
-                                    class="form-select form-select-solid">
-                                <option value="0">{{__("str.PDF")}}</option>
-                                <option value="1">{{__("str.Excel")}}</option>
-                                <option value="2">{{__("str.CVS")}}</option>
-                            </select>
-                            <!--end::Input-->
-                        </div>
-                        <!--end::Input group-->
-                        <!--begin::Input group-->
-                        <div class="fv-row mb-10">
-                            <!--begin::Label-->
-                            <label class="fs-5 fw-bold form-label mb-5">{{__("str.Select Date Range:")}}</label>
-                            <!--end::Label-->
-                            <!--begin::Input-->
-                            <input id="pariod_date" class="form-control form-control-solid"
-                                   placeholder="Pick a date"
-                                   name="date"/>
-                            <!--end::Input-->
-                        </div>
-                        <!--end::Input group-->
-                        <!--begin::Row-->
-                        <!--end::Row-->
-                        <!--begin::Actions-->
-                        <div class="text-center">
-                            <button type="reset" id="kt_customers_export_cancel" class="btn btn-light me-3">
-                                {{__("str.Discard")}}
-                            </button>
-                            <button type="submit" id="kt_customers_export_submit" class="btn btn-primary">
-                                <span class="indicator-label">{{__("str.Submit")}}</span>
-                                <span class="indicator-progress">{{__("str.Please wait...")}}
-															<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
-                            </button>
-                        </div>
-                        <!--end::Actions-->
-                    </form>
-                    <!--end::Form-->
-                </div>
-                <!--end::Modal body-->
-            </div>
-            <!--end::Modal content-->
-        </div>
-        <!--end::Modal dialog-->
-    </div>
     <!--end::Modal - New Card-->
 @endsection
 @section('js')

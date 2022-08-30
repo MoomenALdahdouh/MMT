@@ -225,91 +225,46 @@
                                     <!--end::Description-->
                                 </div>
                                 <!--end::Input group-->
-                            </div>
-                            <!--end::Card header-->
-                        </div>
-                        <!--end::General options-->
-                        <!--begin::Meta options-->
-                        <div class="card card-flush py-4">
-                            <!--begin::Card header-->
-                            <div class="card-header">
-                                <div class="card-title">
-                                    <h2>{{__("str.Meta Options")}}</h2>
-                                </div>
-                            </div>
-                            <!--end::Card header-->
-                            <!--begin::Card body-->
-                            <div class="card-body pt-0">
                                 <!--begin::Input group-->
-                                <div class="mb-10">
+                                <div class="mb-10 fv-row">
                                     <!--begin::Label-->
-                                    <label class="form-label">{{__("str.Meta Tag Title (Arabic)")}}</label>
+                                    <label
+                                        class="required form-label">{{__("str.Service Description (Arabic)")}}</label>
                                     <!--end::Label-->
                                     <!--begin::Input-->
-                                    <input id="meta_title" type="text" class="form-control mb-2" name="meta_title"
-                                           placeholder="{{__("str.Meta tag name")}}"
-                                           value="{{$service->getTranslation('meta_title', "ar")}}"/>
+                                    <textarea id="service_description" type="text" name="service_description"
+                                              class="form-control mb-2"
+                                              rows="3"
+                                              placeholder="{{__("str.Enter Here")}}">{{$service->getTranslation('description', "ar")}}</textarea>
                                     <!--end::Input-->
-                                    <!--begin::Description-->
-                                    <div class="text-muted fs-7">{{__("str.Set a meta tag title. Recommended to be simple and precise keywords.")}}
-                                    </div>
-                                    <!--end::Description-->
+                                    <!--begin::Error-->
+                                    <strong id="service_description_error" class="errors text-danger fs-7"></strong>
+                                    <!--end::Error-->
                                 </div>
                                 <!--end::Input group-->
                                 <!--begin::Input group-->
-                                <div class="mb-10">
+                                <div class="mb-10 fv-row">
                                     <!--begin::Label-->
-                                    <label class="form-label">{{__("str.Meta Tag Title (English)")}}</label>
+                                    <label
+                                        class="required form-label">{{__("str.Service Description (English)")}}</label>
                                     <!--end::Label-->
                                     <!--begin::Input-->
-                                    <input id="meta_title_en" type="text" class="form-control mb-2" name="meta_title"
-                                           placeholder="{{__("str.Meta tag name")}}"
-                                           value="{{$service->getTranslation('meta_title', "en")}}"/>
+                                    <textarea id="service_description_en" type="text" name="service_description_en"
+                                           class="form-control mb-2"
+                                              rows="3"
+                                           placeholder="{{__("str.Enter Here")}}">{{$service->getTranslation('description', "en")}}</textarea>
                                     <!--end::Input-->
+                                    <!--begin::Error-->
+                                    <strong id="service_description_en_error" class="errors text-danger fs-7"></strong>
+                                    <!--end::Error-->
                                     <!--begin::Description-->
-                                    <div class="text-muted fs-7">{{__("str.Set a meta tag title. Recommended to be simple and precise keywords.")}}
-                                    </div>
-                                    <!--end::Description-->
-                                </div>
-                                <!--end::Input group-->
-                                <!--begin::Input group-->
-                                <div class="mb-10">
-                                    <!--begin::Label-->
-                                    <label class="form-label">{{__("str.Meta Tag Description (Arabic)")}}</label>
-                                    <!--end::Label-->
-                                    <!--begin::Editor-->
-                                    <input id="meta_description" type="text" class="form-control mb-2"
-                                           name="meta_description"
-                                           placeholder="{{__("str.Meta tag Description")}}"
-                                           value="{{$service->getTranslation('meta_description', "ar")}}"/>
-                                    <!--end::Editor-->
-                                    <!--begin::Description-->
-                                    <div class="text-muted fs-7">{{__("str.Set a meta tag description to the service for increased SEO ranking.")}}
-                                    </div>
-                                    <!--end::Description-->
-                                </div>
-                                <!--end::Input group-->
-                                <!--begin::Input group-->
-                                <div class="mb-10">
-                                    <!--begin::Label-->
-                                    <label class="form-label">{{__("str.Meta Tag Description (English)")}}</label>
-                                    <!--end::Label-->
-                                    <!--begin::Editor-->
-                                    <input id="meta_description_en" type="text" class="form-control mb-2"
-                                           name="meta_description"
-                                           placeholder="{{__("str.Meta tag Description")}}"
-                                           value="{{$service->getTranslation('meta_description', "en")}}"/>
-                                    <!--end::Editor-->
-                                    <!--begin::Description-->
-                                    <div class="text-muted fs-7">{{__("str.Set a meta tag description to the service for increased SEO ranking.")}}
-                                    </div>
                                     <!--end::Description-->
                                 </div>
                                 <!--end::Input group-->
                             </div>
                             <!--end::Card header-->
                         </div>
-                        <!--end::Meta options-->
+                        <!--end::General options-->
                         <div class="d-flex justify-content-end">
                             <!--begin::Button-->
                             <a href="{{ url()->previous() }}"

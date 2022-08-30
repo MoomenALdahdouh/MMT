@@ -19,6 +19,7 @@ use App\Http\Controllers\admin\TermsConditionsAdminController;
 use App\Http\Controllers\Admin\UserAdminController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CKEditorController;
+use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\ProductsController;
@@ -54,6 +55,13 @@ Route::prefix('products')
         Route::get('view/{id}', 'show')->name('view');
     });
 
+Route::prefix('contact-us')
+    ->name('contact-us')
+    ->controller(ContactUsController::class)
+    ->group(function () {
+        Route::get('/', 'index')->name('index');
+        Route::post('store', 'store')->name('store');
+    });
 
 //Language rout
 Route::get('lang/{lang}', [LanguageController::class, 'switchLang'])->name('lang.switch');
