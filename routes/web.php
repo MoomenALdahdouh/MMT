@@ -1,21 +1,21 @@
 <?php
 
-use App\Http\Controllers\admin\AboutUsAdminController;
+use App\Http\Controllers\Admin\AboutUsAdminController;
 use App\Http\Controllers\Admin\AuthAdminController;
-use App\Http\Controllers\admin\CategoryAdminController;
-use App\Http\Controllers\admin\ContactUsAdminController;
+use App\Http\Controllers\Admin\CategoryAdminController;
+use App\Http\Controllers\Admin\ContactUsAdminController;
 use App\Http\Controllers\Admin\DashboardAdminController;
-use App\Http\Controllers\admin\FollowUsAdminController;
-use App\Http\Controllers\admin\OurMessageAdminController;
-use App\Http\Controllers\admin\OurStoryAdminController;
+use App\Http\Controllers\Admin\FollowUsAdminController;
+use App\Http\Controllers\Admin\OurMessageAdminController;
+use App\Http\Controllers\Admin\OurStoryAdminController;
 use App\Http\Controllers\Admin\PermissionAdminController;
-use App\Http\Controllers\admin\PrivacyPolicyAdminController;
-use App\Http\Controllers\admin\ProductAdminController;
-use App\Http\Controllers\admin\RoleController;
+use App\Http\Controllers\Admin\PrivacyPolicyAdminController;
+use App\Http\Controllers\Admin\ProductAdminController;
+use App\Http\Controllers\Admin\RoleController;
 use App\Http\Controllers\Admin\RolesAdminController;
-use App\Http\Controllers\admin\ServiceAdminController;
-use App\Http\Controllers\admin\SettingsAdminController;
-use App\Http\Controllers\admin\TermsConditionsAdminController;
+use App\Http\Controllers\Admin\ServiceAdminController;
+use App\Http\Controllers\Admin\SettingsAdminController;
+use App\Http\Controllers\Admin\TermsConditionsAdminController;
 use App\Http\Controllers\Admin\UserAdminController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CKEditorController;
