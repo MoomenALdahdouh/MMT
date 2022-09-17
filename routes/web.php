@@ -25,6 +25,7 @@ use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\UploaderAdminController;
 use Illuminate\Support\Facades\Route;
+use Spatie\Permission\PermissionRegistrar;
 
 
 /*
@@ -41,7 +42,7 @@ use Illuminate\Support\Facades\Route;
 /*Route::get('/', function () {
     return view('index');
 });*/
-
+app()->make(PermissionRegistrar::class)->forgetCachedPermissions();
 Route::prefix('/')
     ->controller(IndexController::class)
     ->group(function () {
