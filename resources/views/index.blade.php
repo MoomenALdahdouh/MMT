@@ -105,7 +105,7 @@
                 </div>{{--Left--}}
                 <div class="col-lg-4">
                     <div class="cv-service-img">
-                        <img src="{{asset("assets/images/service-img.png")}}" alt="image" class="img-fluid">
+                        <img src="{{asset("assets/images/serv.jpg")}}" alt="image" class="img-fluid">
                     </div>
                 </div>{{--Image--}}
             </div>
