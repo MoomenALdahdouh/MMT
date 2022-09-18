@@ -157,11 +157,11 @@ class ServiceAdminController extends Controller
 
             if ($validator->passes()) {
                 if ($request->image_updated == 1) {
-                    $old_image = "uploads/services/" . $data->image;
+                    $old_image = "uploads/services/$data->image";
                     if (file_exists($old_image))
                         unlink($old_image);
                     $image = time() . '.jpg';
-                    file_put_contents("/uploads/services/" . $image, base64_decode($request->service_image));
+                    file_put_contents("uploads/services/$image" , base64_decode($request->service_image));
                     $data->image = $image;
                 }
                 $data->name = ['ar' => $request->service_name, 'en' => $request->service_name_en];
