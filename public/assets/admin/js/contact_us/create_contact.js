@@ -17,7 +17,7 @@ $(function () {
                 subject = subject_input.val(),
                 message = message_input.val();
 
-            console.log(message)
+            console.log(app_url)
             $(".errors").html("");
             $.ajax({
                 headers: {

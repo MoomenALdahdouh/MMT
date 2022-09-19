@@ -1,4 +1,4 @@
-const app_url = $('#app_url').val(),
+let app_url = $('#app_url').val(),
     errors_tags = $(".errors"),
     language = $('#language').val();
 
