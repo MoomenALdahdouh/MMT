@@ -127,7 +127,7 @@
                         <div class="d-flex align-items-center mb-2">
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px symbol-circle">
-                                <img alt="Pic" src="{{asset("assets/images/150-15.jpg")}}"/>
+                                <img alt="Pic" src="{{asset("assets/admin/images/150-15.jpg")}}"/>
                             </div>
                             <!--end::Avatar-->
                             <!--begin::Details-->
@@ -162,7 +162,7 @@
                             <!--end::Details-->
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px symbol-circle">
-                                <img alt="Pic" src="{{asset("assets/images/blank.svg")}}"/>
+                                <img alt="Pic" src="{{asset("assets/admin/images/blank.svg")}}"/>
                             </div>
                             <!--end::Avatar-->
                         </div>
@@ -185,7 +185,7 @@
                         <div class="d-flex align-items-center mb-2">
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px symbol-circle">
-                                <img alt="Pic" src="{{asset("assets/images/150-15.jpg")}}"/>
+                                <img alt="Pic" src="{{asset("assets/admin/images/150-15.jpg")}}"/>
                             </div>
                             <!--end::Avatar-->
                             <!--begin::Details-->
@@ -219,7 +219,7 @@
                             <!--end::Details-->
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px symbol-circle">
-                                <img alt="Pic" src="{{asset("assets/images/blank.svg")}}"/>
+                                <img alt="Pic" src="{{asset("assets/admin/images/blank.svg")}}"/>
                             </div>
                             <!--end::Avatar-->
                         </div>
@@ -241,7 +241,7 @@
                         <div class="d-flex align-items-center mb-2">
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px symbol-circle">
-                                <img alt="Pic" src="{{asset("assets/images/150-15.jpg")}}"/>
+                                <img alt="Pic" src="{{asset("assets/admin/images/150-15.jpg")}}"/>
                             </div>
                             <!--end::Avatar-->
                             <!--begin::Details-->
@@ -276,7 +276,7 @@
                             <!--end::Details-->
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px symbol-circle">
-                                <img alt="Pic" src="{{asset("assets/images/blank.svg")}}"/>
+                                <img alt="Pic" src="{{asset("assets/admin/images/blank.svg")}}"/>
                             </div>
                             <!--end::Avatar-->
                         </div>
@@ -298,7 +298,7 @@
                         <div class="d-flex align-items-center mb-2">
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px symbol-circle">
-                                <img alt="Pic" src="{{asset("assets/images/150-15.jpg")}}"/>
+                                <img alt="Pic" src="{{asset("assets/admin/images/150-15.jpg")}}"/>
                             </div>
                             <!--end::Avatar-->
                             <!--begin::Details-->
@@ -333,7 +333,7 @@
                             <!--end::Details-->
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px symbol-circle">
-                                <img alt="Pic" src="{{asset("assets/images/blank.svg")}}"/>
+                                <img alt="Pic" src="{{asset("assets/admin/images/blank.svg")}}"/>
                             </div>
                             <!--end::Avatar-->
                         </div>
@@ -354,7 +354,7 @@
                         <div class="d-flex align-items-center mb-2">
                             <!--begin::Avatar-->
                             <div class="symbol symbol-35px symbol-circle">
-                                <img alt="Pic" src="{{asset("assets/images/150-15.jpg")}}"/>
+                                <img alt="Pic" src="{{asset("assets/admin/images/150-15.jpg")}}"/>
                             </div>
                             <!--end::Avatar-->
                             <!--begin::Details-->

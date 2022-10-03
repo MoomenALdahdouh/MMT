@@ -16,7 +16,7 @@
 @else
     <link rel="stylesheet" type="text/css" href="{{asset("assets/css/style.css")}}">
 @endif
-<link rel="shortcut icon" href="{{asset("assets/images/fav3.png")}}" type="image/x-icon">
+<link rel="shortcut icon" href="{{asset("assets/admin/images/fav3.png")}}" type="image/x-icon">
 <!-- Bootstrap CSS -->
 {{--@if(app()->getLocale()=='ar')
     <link href="{{asset("assets/site/vendor/bootstrap-5.1.0-dist/css/bootstrap.rtl.min.css")}}" rel="stylesheet"/>

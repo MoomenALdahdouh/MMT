@@ -10,7 +10,7 @@
 	<div class="d-flex flex-column flex-column-fluid text-center p-10 py-lg-20">
 		<!--begin::Logo-->
 		<a href="#" class="mb-10 pt-lg-20">
-            <img src="{{asset("assets/images/404-error.png")}}" class="mw-100 mh-300px theme-light-show" alt="" />
+            <img src="{{asset("assets/admin/images/404-error.png")}}" class="mw-100 mh-300px theme-light-show" alt="" />
             <!--begin::Logo-->
             <!--end::Logo-->
 		</a>

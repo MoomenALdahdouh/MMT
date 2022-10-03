@@ -6,7 +6,7 @@
 													<div class="menu-content d-flex align-items-center px-3">
 														<!--begin::Avatar-->
 														<div class="symbol symbol-50px me-5">
-															<img alt="Logo" src="{{asset('assets/images/150-26.jpg')}}" />
+															<img alt="Logo" src="{{asset('assets/admin/images/150-26.jpg')}}" />
 														</div>
 														<!--end::Avatar-->
 														<!--begin::Username-->
@@ -96,7 +96,7 @@
 													<a href="#" class="menu-link px-5">
 														<span class="menu-title position-relative">Language
 														<span class="fs-8 rounded bg-light px-3 py-2 position-absolute translate-middle-y top-50 end-0">English
-														<img class="w-15px h-15px rounded-1 ms-2" src="{{asset('/assets/admin/images/united-states.svg')}}" alt="" /></span></span>
+														<img class="w-15px h-15px rounded-1 ms-2" src="{{asset('/Controllers\Adminunited-states.svg')}}" alt="" /></span></span>
 													</a>
 													<!--begin::Menu sub-->
 													<div class="menu-sub menu-sub-dropdown w-175px py-4">
@@ -104,7 +104,7 @@
 														<div class="menu-item px-3">
 															<a href="?page=account/settings" class="menu-link d-flex px-5 active">
 															<span class="symbol symbol-20px me-4">
-																<img class="rounded-1" src="{{asset('/assets/admin/images/united-states.svg')}}" alt="" />
+																<img class="rounded-1" src="{{asset('/Controllers\Adminunited-states.svg')}}" alt="" />
 															</span>English</a>
 														</div>
 														<!--end::Menu item-->
@@ -112,7 +112,7 @@
 														<div class="menu-item px-3">
 															<a href="?page=account/settings" class="menu-link d-flex px-5">
 															<span class="symbol symbol-20px me-4">
-																<img class="rounded-1" src="{{asset('/assets/images/spain.svg')}}" alt="" />
+																<img class="rounded-1" src="{{asset('/assets/admin/images/spain.svg')}}" alt="" />
 															</span>Spanish</a>
 														</div>
 														<!--end::Menu item-->
@@ -120,7 +120,7 @@
 														<div class="menu-item px-3">
 															<a href="?page=account/settings" class="menu-link d-flex px-5">
 															<span class="symbol symbol-20px me-4">
-																<img class="rounded-1" src="{{asset('/assets/images/germany.svg')}}" alt="" />
+																<img class="rounded-1" src="{{asset('/assets/admin/images/germany.svg')}}" alt="" />
 															</span>German</a>
 														</div>
 														<!--end::Menu item-->
@@ -128,7 +128,7 @@
 														<div class="menu-item px-3">
 															<a href="?page=account/settings" class="menu-link d-flex px-5">
 															<span class="symbol symbol-20px me-4">
-																<img class="rounded-1" src="{{asset('/assets/images/japan.svg')}}" alt="" />
+																<img class="rounded-1" src="{{asset('/assets/admin/images/japan.svg')}}" alt="" />
 															</span>Japanese</a>
 														</div>
 														<!--end::Menu item-->
@@ -136,7 +136,7 @@
 														<div class="menu-item px-3">
 															<a href="?page=account/settings" class="menu-link d-flex px-5">
 															<span class="symbol symbol-20px me-4">
-																<img class="rounded-1" src="{{asset('/assets/images/france.svg')}}" alt="" />
+																<img class="rounded-1" src="{{asset('/assets/admin/images/france.svg')}}" alt="" />
 															</span>French</a>
 														</div>
 														<!--end::Menu item-->

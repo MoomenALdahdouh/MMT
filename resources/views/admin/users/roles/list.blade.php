@@ -70,7 +70,7 @@
                                     <button type="button" class="btn btn-clear d-flex flex-column flex-center"
                                             data-bs-toggle="modal" data-bs-target="#kt_modal_add_role">
                                         <!--begin::Illustration-->
-                                        <img src="{{asset("assets/images/4.png")}}" alt=""
+                                        <img src="{{asset("assets/admin/images/4.png")}}" alt=""
                                              class="mw-100 mh-150px mb-7"/>
                                         <!--end::Illustration-->
                                         <!--begin::Label-->

@@ -1,4 +1,4 @@
-									
+
 									<!--begin::Step 5-->
 									<div data-kt-stepper-element="content">
 										<div class="w-100 text-center">
@@ -10,7 +10,7 @@
 											<!--end::Description-->
 											<!--begin::Illustration-->
 											<div class="text-center px-4 py-15">
-												<img src="assets/images/sketchy-1/9.png" alt="" class="mw-100 mh-300px" />
+												<img src="assets/admin/images/sketchy-1/9.png" alt="" class="mw-100 mh-300px" />
 											</div>
 											<!--end::Illustration-->
 										</div>

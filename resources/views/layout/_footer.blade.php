@@ -9,13 +9,13 @@
                                                 class="img-fluid"/></a>
                     <p>@lang("sts.describe_title")</p>
                     {{--<div class="cv-foot-payment">
-                        <a href="javascript:;"><img src="{{asset("assets/images/pay1.png")}}" alt="image"
+                        <a href="javascript:;"><img src="{{asset("assets/admin/images/pay1.png")}}" alt="image"
                                                     class="img-fluid"/></a>
-                        <a href="javascript:;"><img src="{{asset("assets/images/pay2.png")}}" alt="image"
+                        <a href="javascript:;"><img src="{{asset("assets/admin/images/pay2.png")}}" alt="image"
                                                     class="img-fluid"/></a>
-                        <a href="javascript:;"><img src="{{asset("assets/images/pay3.png")}}" alt="image"
+                        <a href="javascript:;"><img src="{{asset("assets/admin/images/pay3.png")}}" alt="image"
                                                     class="img-fluid"/></a>
-                        <a href="javascript:;"><img src="{{asset("assets/images/pay4.png")}}" alt="image"
+                        <a href="javascript:;"><img src="{{asset("assets/admin/images/pay4.png")}}" alt="image"
                                                     class="img-fluid"/></a>
                     </div>--}}
                 </div>

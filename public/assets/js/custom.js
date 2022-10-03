@@ -316,7 +316,6 @@ $(".submitForm").on('click', function () {
             contentType: false,
             processData: false
         }).done(function (resp) {
-            console.log(resp);
             if ($.isEmptyObject(resp.error)) {
                 targetForm.find('input').val('');
                 targetForm.find('textarea').val('');

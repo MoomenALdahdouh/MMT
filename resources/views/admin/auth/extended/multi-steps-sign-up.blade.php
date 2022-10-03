@@ -153,7 +153,7 @@ License: For each use you must have a valid license purchased only from above li
 						</div>
 						<!--end::Header-->
 						<!--begin::Illustration-->
-						<div class="d-flex flex-row-auto bgi-no-repeat bgi-position-x-center bgi-size-contain bgi-position-y-bottom min-h-150px min-h-lg-300px" style="background-image: url(assets/images/coding.png)"></div>
+						<div class="d-flex flex-row-auto bgi-no-repeat bgi-position-x-center bgi-size-contain bgi-position-y-bottom min-h-150px min-h-lg-300px" style="background-image: url(assets/admin/images/coding.png)"></div>
 						<!--end::Illustration-->
 					</div>
 					<!--end::Wrapper-->

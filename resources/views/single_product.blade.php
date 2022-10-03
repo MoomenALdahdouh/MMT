@@ -60,7 +60,7 @@
                                         <li>
                                             <div class="cv-comment-box">
                                                 <div class="cv-comment-img">
-                                                    <img src="../assets/images/insta-wid1.jpg" alt="image"
+                                                    <img src="../assets/admin/images/insta-wid1.jpg" alt="image"
                                                          class="img-fluid">
                                                 </div>
                                                 <div class="cv-comment-text">
@@ -94,7 +94,7 @@
                                                 <li>
                                                     <div class="cv-comment-box">
                                                         <div class="cv-comment-img">
-                                                            <img src="../assets/images/insta-wid2.jpg" alt="image"
+                                                            <img src="../assets/admin/images/insta-wid2.jpg" alt="image"
                                                                  class="img-fluid">
                                                         </div>
                                                         <div class="cv-comment-text">
@@ -130,7 +130,7 @@
                                         <li>
                                             <div class="cv-comment-box">
                                                 <div class="cv-comment-img">
-                                                    <img src="../assets/images/insta-wid6.jpg" alt="image"
+                                                    <img src="../assets/admin/images/insta-wid6.jpg" alt="image"
                                                          class="img-fluid">
                                                 </div>
                                                 <div class="cv-comment-text">

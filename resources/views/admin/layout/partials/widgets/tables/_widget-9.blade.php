@@ -52,7 +52,7 @@
 																<td>
 																	<div class="d-flex align-items-center">
 																		<div class="symbol symbol-45px me-5">
-																			<img src="{{asset('assets/images/150-11.jpg')}}" alt="" />
+																			<img src="{{asset('assets/admin/images/150-11.jpg')}}" alt="" />
 																		</div>
 																		<div class="d-flex justify-content-start flex-column">
 																			<a href="#" class="text-dark fw-bolder text-hover-primary fs-6">Ana Simmons</a>
@@ -119,7 +119,7 @@
 																<td>
 																	<div class="d-flex align-items-center">
 																		<div class="symbol symbol-45px me-5">
-																			<img src="{{asset('assets/images/150-3.jpg')}}" alt="" />
+																			<img src="{{asset('assets/admin/images/150-3.jpg')}}" alt="" />
 																		</div>
 																		<div class="d-flex justify-content-start flex-column">
 																			<a href="#" class="text-dark fw-bolder text-hover-primary fs-6">Jessie Clarcson</a>
@@ -186,7 +186,7 @@
 																<td>
 																	<div class="d-flex align-items-center">
 																		<div class="symbol symbol-45px me-5">
-																			<img src="{{asset('assets/images/150-4.jpg')}}" alt="" />
+																			<img src="{{asset('assets/admin/images/150-4.jpg')}}" alt="" />
 																		</div>
 																		<div class="d-flex justify-content-start flex-column">
 																			<a href="#" class="text-dark fw-bolder text-hover-primary fs-6">Lebron Wayde</a>
@@ -253,7 +253,7 @@
 																<td>
 																	<div class="d-flex align-items-center">
 																		<div class="symbol symbol-45px me-5">
-																			<img src="{{asset('assets/images/150-5.jpg')}}" alt="" />
+																			<img src="{{asset('assets/admin/images/150-5.jpg')}}" alt="" />
 																		</div>
 																		<div class="d-flex justify-content-start flex-column">
 																			<a href="#" class="text-dark fw-bolder text-hover-primary fs-6">Natali Goodwin</a>
@@ -320,7 +320,7 @@
 																<td>
 																	<div class="d-flex align-items-center">
 																		<div class="symbol symbol-45px me-5">
-																			<img src="{{asset('assets/images/150-6.jpg')}}" alt="" />
+																			<img src="{{asset('assets/admin/images/150-6.jpg')}}" alt="" />
 																		</div>
 																		<div class="d-flex justify-content-start flex-column">
 																			<a href="#" class="text-dark fw-bolder text-hover-primary fs-6">Kevin Leonard</a>

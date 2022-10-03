@@ -1,4 +1,4 @@
-		
+
 		<!--begin::Modal - Invite Friends-->
 		<div class="modal fade" id="kt_modal_invite_friends" tabindex="-1" aria-hidden="true">
 			<!--begin::Modal dialog-->
@@ -171,7 +171,7 @@
 									<div class="d-flex align-items-center">
 										<!--begin::Avatar-->
 										<div class="symbol symbol-35px symbol-circle">
-											<img alt="Pic" src="assets/images/150-15.jpg" />
+											<img alt="Pic" src="assets/admin/images/150-15.jpg" />
 										</div>
 										<!--end::Avatar-->
 										<!--begin::Details-->

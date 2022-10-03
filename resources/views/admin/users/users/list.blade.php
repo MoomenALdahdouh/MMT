@@ -268,11 +268,11 @@
                                                         <!--begin::Image input-->
                                                         <div class="image-input image-input-outline"
                                                              data-kt-image-input="true"
-                                                             style="background-image: url({{asset("assets/images/blank.svg")}})">
+                                                             style="background-image: url({{asset("assets/admin/images/blank.svg")}})">
                                                             <!--begin::Preview existing avatar-->
                                                             <div id="uploaded_image"
                                                                  class="image-input-wrapper w-125px h-125px"
-                                                                 style="background-image: url({{asset("assets/images/blank.svg")}});"></div>
+                                                                 style="background-image: url({{asset("assets/admin/images/blank.svg")}});"></div>
                                                             <!--end::Preview existing avatar-->
                                                             <!--begin::Label-->
                                                             <label

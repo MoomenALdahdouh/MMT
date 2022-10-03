@@ -91,7 +91,7 @@ License: For each use you must have a valid license purchased only from above li
 				</div>
 				<!--end::Content-->
 				<!--begin::Illustration-->
-				<div class="d-flex flex-row-fluid bgi-no-repeat bgi-position-x-center bgi-position-y-top bgi-size-cover min-h-100px min-h-lg-250px opacity-75" style="background-image: url(assets/images/portfolio.png)"></div>
+				<div class="d-flex flex-row-fluid bgi-no-repeat bgi-position-x-center bgi-position-y-top bgi-size-cover min-h-100px min-h-lg-250px opacity-75" style="background-image: url(assets/admin/images/portfolio.png)"></div>
 				<!--end::Illustration-->
 			</div>
 			<!--end::Authentication - Coming Soon-->
