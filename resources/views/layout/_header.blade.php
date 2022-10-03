@@ -36,7 +36,7 @@
         <div class="row">
             <div class="col-lg-3 col-7">
                 <div class="cv-logo">
-                    <a href="{{url("/")}}"><img width="170px" src="{{asset("assets/admin/images/logo-color.png")}}"
+                    <a href="{{url("/")}}"><img width="170px" src="{{asset("assets/images/logo-color.png")}}"
                                                 alt="image"
                                                 class="img-fluid"/></a>
                 </div>

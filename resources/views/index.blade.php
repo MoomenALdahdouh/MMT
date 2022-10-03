@@ -22,7 +22,7 @@
                 </div>
                 <div class="col-md-5">
                     <div class="cv-banner-img">
-                        <img src="{{asset("assets/admin/images/banner.png")}}" alt="images" class="img-fluid"/>
+                        <img src="{{asset("assets/images/banner.png")}}" alt="images" class="img-fluid"/>
                     </div>
                 </div>
             </div>
@@ -105,7 +105,7 @@
                 </div>{{--Left--}}
                 <div class="col-lg-4">
                     <div class="cv-service-img">
-                        <img src="{{asset("assets/admin/images/serv.jpg")}}" alt="image" class="img-fluid">
+                        <img src="{{asset("assets/images/serv.jpg")}}" alt="image" class="img-fluid">
                     </div>
                 </div>{{--Image--}}
             </div>
@@ -673,7 +673,7 @@
                                 </div>
                             </li>
                             <li>
-                                <img width="100%" class="rounded-3" src="{{asset("assets/admin/images/contact.jpg")}}">
+                                <img width="100%" class="rounded-3" src="{{asset("assets/images/contact.jpg")}}">
                             </li>
                         </ul>
                     </div>
