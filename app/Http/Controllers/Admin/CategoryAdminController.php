@@ -1,5 +1,6 @@
 <?php
 /*TODO:: By Eng. Moomen Sameer Aldahdouh 0599124279, moomenaldahdouh@gmail.com*/
+
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
@@ -57,14 +58,14 @@ class CategoryAdminController extends Controller
                             return '<!--begin::Status=-->
                                 <div class="text-center"><div class="text-end pe-0" data-order="Inactive">
                                     <!--begin::Badges-->
-                                    <div class="badge badge-light-danger">'.trans("str.Inactive").'</div>
+                                    <div class="badge badge-light-danger">' . trans("str.Inactive") . '</div>
                                     <!--end::Badges-->
                                 </div></div>
                                 <!--end::Status=-->';
                         case 1:
                             return '<div class="text-center"><div class="text-end pe-0" data-order="Published">
                                     <!--begin::Badges-->
-                                    <div class="badge badge-light-success">'.trans("str.Published").'</div>
+                                    <div class="badge badge-light-success">' . trans("str.Published") . '</div>
                                     <!--end::Badges-->
                                 </div></div>';
                     }
@@ -95,7 +96,7 @@ class CategoryAdminController extends Controller
                     return $action;
                 })
                 ->rawColumns(['id'], ['name'], ['status'], ['action'])
-                ->escapeColumns(['id' => 'id'],['name' => 'name'], ['status' => 'status'], ['action' => 'action'])
+                ->escapeColumns(['id' => 'id'], ['name' => 'name'], ['status' => 'status'], ['action' => 'action'])
                 ->make(true);
         }
         return view("admin.categories.categories", compact('categories'));
@@ -188,13 +189,13 @@ class CategoryAdminController extends Controller
     public function destroy($id)
     {
         $data = Category::query()->find($id);
-        $old_image = "uploads/categories/" . $data->image;
-        if (file_exists($old_image))
-            unlink($old_image);
-        $data->delete();
-        if ($data)
+        if ($data) {
+            $old_image = "uploads/categories/" . $data->image;
+            if (file_exists($old_image))
+                unlink($old_image);
+            $data->delete();
             return response()->json(['success' => 'success']);
-        else
+        } else
             return response()->json(['error' => 'error']);
     }
 }
