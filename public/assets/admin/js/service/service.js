@@ -38,7 +38,7 @@ $(function () {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             },
             type: "DELETE",
-            url: app_url+"/admin/categories/delete/" + id,
+            url: app_url+"/admin/services/delete/" + id,
             success: function (response) {
                 if (response['success']) {
                     Swal.fire({
