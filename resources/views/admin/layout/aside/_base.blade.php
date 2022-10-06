@@ -8,7 +8,7 @@
         <!--begin::Logo-->
         <a href="{{url("/admin")}}">
             {{--<img alt="Logo" src="{{asset('/assets/media/logos/logo-1-dark.svg')}}" class="h-25px logo"/>--}}
-            <img alt="Logo" width="85%" src="{{asset('Controllers\Adminlogo.png')}}" class="logo pt-2"/>
+            <img alt="Logo" width="85%" src="{{asset('assets/admin/images/logo.png')}}" class="logo pt-2"/>
         </a>
         <!--end::Logo-->
         <!--begin::Aside toggler-->

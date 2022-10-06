@@ -23,7 +23,10 @@ function is_en()
 
 function lang($data)
 {
-    return $data->getTranslation('name', config('app.locale'));
+    if ($data)
+        return $data->getTranslation('name', config('app.locale'));
+    else
+        return "";
     //return app()->getLocale() == 'ar' ? $data->name_ar : $data->name_en;
 }
 
