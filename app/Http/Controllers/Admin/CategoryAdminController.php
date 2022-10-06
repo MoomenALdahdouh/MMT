@@ -190,11 +190,11 @@ class CategoryAdminController extends Controller
     {
         $data = Category::query()->find($id);
         if ($data) {
-            if ($data->image) {
+            /*if ($data->image) {
                 $old_image = "uploads/categories/" . $data->image;
                 if (file_exists($old_image))
                     unlink($old_image);
-            }
+            }*/
             $data->delete();
             return response()->json(['success' => 'success']);
         } else
